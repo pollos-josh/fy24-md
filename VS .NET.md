@@ -115,7 +115,17 @@ using MyNamespace
 
 namespace Demo {
 	class Program {
-		
+		static void Main(string[] args) {
+			//code
+		   Program2();
+		}
+	}
+}
+
+
+namespace MyNamespace {
+	class Program2 {
+		//code
 	}
 }
 ```
