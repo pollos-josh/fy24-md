@@ -131,7 +131,7 @@ namespace MyNamespace {
 ```
 
 ## Structures
-suitable for representing values with small mem. requirments.
+suitable for representing values with small mem. requirements.
 ```c#
 namespace Demo {
 	class Program {
@@ -162,7 +162,8 @@ struct Currency {
 namespace Demo {
 	class Program {
 		static void Main(string[], args) {
-			 Currency unitedStatesCurrency = new Currency("USD", $); Currency philippineCurrency = new Currency("PHP", ₱);
+			 Currency unitedStatesCurrency = new Currency("USD", $);
+			 Currency philippineCurrency = new Currency("PHP", ₱);
 		}
 	}
 }
