@@ -42,4 +42,4 @@ Structs are smaller and faster in memory.
 - Indexers
 - [[Constructors]]
 - Destructors
-- Nested Types
+- [[Nested Types]]
