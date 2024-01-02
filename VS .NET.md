@@ -147,3 +147,23 @@ struct Currency {
 	public string currencySymbol;
 }
 ```
+
+```c#
+struct Currency {
+	private string currencyCode;
+	private string currencySymbol;
+
+	public Currency(string code, string symbol){ // constructor
+		currencyCode = code;
+		currencySymbol = symbol;
+	}
+}
+
+namespace Demo {
+	class Program {
+		static void Main(string[], args) {
+			 Currency unitedStatesCurrency = new Currency("USD", $); Currency philippineCurrency = new Currency("PHP", ₱);
+		}
+	}
+}
+```
