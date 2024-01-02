@@ -69,4 +69,8 @@ double price = 50;
 bool isComplete;
 ```
 
-#
+## Implicit Data
+```C#
+var implicitly1 = 100;
+var implicitly2 = 
+```
