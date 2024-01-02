@@ -85,3 +85,11 @@ Can accept null values
 Nullable<int> variable = 10;
 bool? = null;
 ```
+
+## Namespaces
+```C#
+System.Console.WriteLine("HELLO WORLD!");
+using System;
+...
+	Console.WriteLine("Hello World!");
+```
