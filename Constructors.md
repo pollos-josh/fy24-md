@@ -24,7 +24,7 @@ class SampleClass
 {
 	public int SampleProperty
 	{get;set;}
-	public int SampleProperty2
+	public string SampleProperty2
 	{get;set;}
 }
 
