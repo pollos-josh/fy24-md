@@ -24,3 +24,9 @@ Currency philippinesCurrency = new Currency("PHP", "₱");
 Console.WriteLine(currency.philippinesCurrency.code)
 Console.WriteLine(currency.philippinesCurrency.symbol)
 ```
+
+
+## Class vs Struct
+Classes are more based. You can put a lot more fields, properties, etc., in classes than in structs.
+
+Structs are smaller and faster in memory.
