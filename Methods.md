@@ -15,17 +15,19 @@ class SampleClass
  ```c#
 namespace Demo
 {
-    using MyNamespace;
     class Program
     {
         static void Main(string[] args)
         {
             SampleClass sampleClass = new SampleClass();
-            sampleClass.SampleMethod(); // calls method in different class
+            sampleClass.SampleMethod(); 
+            // calls method in different class
 
-            MethodA();
+            MethodA(); 
+            //calls method in same class
 
-            MyClass.MyMethod(); //full syntax: MyNamespace.MyClass.MyMethod()
+            MyNamespace.MyClass.MyMethod(); 
+			//calls method in different namespace
         }
 
         static void MethodA()
