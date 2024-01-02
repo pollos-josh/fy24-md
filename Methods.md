@@ -21,7 +21,7 @@ namespace Demo
         static void Main(string[] args)
         {
             SampleClass sampleClass = new SampleClass();
-            sampleClass.SampleMethod();
+            sampleClass.SampleMethod(); // calls method in different class
 
             MethodA();
 
