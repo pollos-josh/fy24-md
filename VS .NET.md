@@ -93,3 +93,30 @@ using System;
 ...
 	Console.WriteLine("Hello World!");
 ```
+
+```c#
+namespace MyNamespace {
+	class Program {
+		MyNamespace2.Program Program2;
+	}
+}
+
+namespace MyNamespace2 {
+	class Program {
+		static void Main(string[] args) {
+		// code
+		}
+	}
+}
+```
+
+```
+```
+
+## Structures
+suitable for representing values with small mem. requirments.
+```c#
+struct Currency {
+	// fields, properties, methods, and events
+}
+```
