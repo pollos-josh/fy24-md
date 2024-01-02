@@ -46,7 +46,7 @@ Refers to code that is not executed and managed by CLR. Typically consists of la
 
 ## Custom Types
 - User defined data types.
-
+## [[Classes]]
 ```C#
 class SampleClass {
 	//class members go here
