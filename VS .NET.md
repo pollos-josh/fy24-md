@@ -133,7 +133,17 @@ namespace MyNamespace {
 ## Structures
 suitable for representing values with small mem. requirments.
 ```c#
+namespace Demo {
+	class Program {
+		static void Main(string[] args) {
+			Currency unitedStatesCurrency;
+			unitedStatesCurrency.currencyCode = 'USD';
+			unitedStatesCurrency.currencySymbol = '$';
+		}
+	}
+}
 struct Currency {
-	// fields, properties, methods, and events
+	public string currencyCode; //sample field
+	public string currencySymbol;
 }
 ```
