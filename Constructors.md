@@ -16,28 +16,7 @@ class SampleClass
 SampleClass myClass = new SampleClass();
 ```
 
-```c#
-class SampleClass
-{
-	public SampleClass() //constructor
-	{
-		static void Main()
-		{
-			MethodA();
-		}
 
-		static void MethodA()
-		{
-			Console.WriteLine("Hello World!");
-		}
-	}
-}
-
-class NewClass
-{
-	public 
-}
-```
 
 ## Object Initializer
 Used to initialize type objects without evoking a constructor for the type.
