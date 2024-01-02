@@ -67,10 +67,21 @@ int age;
 string firstName;
 double price = 50;
 bool isComplete;
+float num = 123.40f
 ```
 
 ## Implicit Data
 ```C#
 var implicitly1 = 100;
-var implicitly2 = 
+var implicitly2 = "abc";
+var implicitly3 = true;
+```
+*soft initialized variable. must be initialized*
+
+## Nullable Type
+Can accept null values
+
+```c#
+Nullable<int> variable = 10;
+bool? = null;
 ```
