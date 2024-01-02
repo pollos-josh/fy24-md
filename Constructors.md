@@ -23,6 +23,13 @@ Used to initialize type objects without evoking a constructor for the type.
 class SampleClass
 {
 	public int SampleProperty
-	{}
+	{get;set;}
+	public int SampleProperty2
+	{get;set;}
 }
+
+SampleClass myClass = new SampleClass()
+{
+	SampleProperty = 100, SampleProperty2 = "Sample String Content"
+};
 ```
