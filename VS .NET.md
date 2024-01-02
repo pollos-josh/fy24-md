@@ -110,7 +110,14 @@ namespace MyNamespace2 {
 }
 ```
 
-```
+```c#
+using MyNamespace
+
+namespace Demo {
+	class Program {
+		
+	}
+}
 ```
 
 ## Structures
