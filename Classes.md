@@ -40,6 +40,6 @@ Structs are smaller and faster in memory.
 - Events
 - Operators
 - Indexers
-- Constructors
+- [[Constructors]]
 - Destructors
 - Nested Types
