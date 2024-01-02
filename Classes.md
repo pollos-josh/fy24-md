@@ -36,7 +36,7 @@ Structs are smaller and faster in memory.
 - [[Fields]]
 - [[Constants]]
 - [[Properties]]
-- Methods
+- [[Methods]]
 - Events
 - Operators
 - Indexers
