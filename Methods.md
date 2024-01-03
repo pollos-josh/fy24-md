@@ -1,6 +1,6 @@
 [[Classes]]
 ---
-csharp Functions. Contains a series of statements or code to perform.
+C# Functions containing a series of statements or code to perform.
 
 ```csharp
 class SampleClass 
@@ -108,3 +108,4 @@ class MainClass {
     }
 }
 ```
+*note: $ enables easy concatenating of strings and variables, with variables in {curly braces}*👍 
