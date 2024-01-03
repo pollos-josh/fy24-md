@@ -135,3 +135,15 @@ class MainClass {
     }
 }
 ```
+
+## Comments
+This applies to the entirety of coding but in C#, pressing `///` will automatically add an XML summary function.
+
+```csharp
+/// <summary>
+/// Description of method/class/struct/function.
+/// </summary>
+/// <param name="parameter">parameter descriptionargs</param>
+/// <returns>Description of what the function returns</returns>
+
+```
