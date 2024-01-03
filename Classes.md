@@ -1,5 +1,6 @@
 [[VS .NET]]
 ---
+# Classes
 Functions like a user defined object. A blueprint and defines a behavior.
 Declared with *class*.
 
