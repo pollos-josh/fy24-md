@@ -147,3 +147,24 @@ This applies to the entirety of coding but in C#, pressing `///` will automatica
 /// <returns>Description of what the function returns</returns>
 
 ```
+
+## Pass By Reference
+Enables function members, methods, properties, indexers, operators, and constructors to change the value of params and have that change persist in a calling environment.
+```csharp
+class SampleClass {
+	public void Main(ref int parameter){
+		// code
+	}
+}
+```
+*Useful if you want to keep a variable's value throughout many values*
+
+```csharp
+public void Main() {
+	parameter = 100;	
+}
+
+public void SampleMain(ref int parameter) {
+	ref para
+}
+```
