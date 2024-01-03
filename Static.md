@@ -47,6 +47,6 @@ class Car() {
 }
 ```
 
-Basically *static* members edit the default for a class, changing the variable at a blueprint model.
+Basically *static* members edit the default for a class, changing the variable at a 
 
 *Note: Don't make it static if values have to be unique.*
