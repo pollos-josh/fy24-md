@@ -94,15 +94,17 @@ public void SampleMethod(int param1, string param2){
 ## Method Overloading
 Different implementations of one method within a class.
 ```csharp
-class Main() {
-	public void Method() {
-		Console.WriteLine("Empty overload..");
-	}
-	public void Method(int param1) {
-		Console.WriteLine("Overload 1.. ", param1);
-	}
-	public void Method(int param1, string param2) {
-		Console.WriteLine("Overload 2.. ", param1, param2);
-	}
+class MainClass {
+    public void Method() {
+        Console.WriteLine("Empty overload..");
+    }
+
+    public void Method(int param1) {
+        Console.WriteLine($"Overload 1: {param1}");
+    }
+
+    public void Method(int param1, string param2) {
+        Console.WriteLine($"Overload 2: {param1}, {param2}");
+    }
 }
 ```
