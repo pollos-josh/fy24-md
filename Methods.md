@@ -67,3 +67,42 @@ Full syntax is MyNamespace.MyClass.MyMethod()*
 - The *return* value.
 - Name of the method.
 - Any method parameters.
+
+## Parameters
+Method parameters are enclosed in parenthesis. Empty parenthesis mean that the method doesn't require params.
+```csharp
+public void Main(){
+	//code
+}
+public void SampleMethod(int parameter, string param2){
+	//code
+}
+```
+
+## Arguments
+When calling methods that require parameters, we must provide arguments to satisfy it.
+```csharp
+public void Main(){
+	SampleMethod(1000, "hello");
+}
+
+public void SampleMethod(int param1, string param2){
+	//code
+}
+```
+
+## Method Overloading
+Different implementations of one method within a class.
+```csharp
+class Main() {
+	public void Method() {
+		Console.WriteLine("Empty overload..");
+	}
+	public void Method(int param1) {
+		Console.WriteLine("Overload 1.. ", param1);
+	}
+	public void Method(int param1, string param2) {
+		Console.WriteLine("Overload 2.. ", param1, param2);
+	}
+}
+```
