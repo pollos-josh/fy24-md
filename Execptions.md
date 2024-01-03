@@ -13,6 +13,6 @@ class CustomException : Exception {
 ## Exception Handling
 Allows you to gracefully handle any unexpected or exceptional situations. Uses the `try`, `catch`, and `finally`.
 
-`try` block surround code that might result in exceptions.
+`try` block wrap code that might result in exceptions.
 `catch` will handle any resulting errors.
 `finally` will run whether or not an exception occurs.
