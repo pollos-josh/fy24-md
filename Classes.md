@@ -45,3 +45,4 @@ Structs are smaller and faster in memory.
 - Destructors
 - [[Nested Types]]
 - [[Static]]
+- [[Anonymous Type]]
