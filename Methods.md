@@ -109,3 +109,29 @@ class MainClass {
 }
 ```
 *note: $ enables easy concatenating of strings and variables, with variables in {curly braces}*👍 
+
+*note note: it is also wise to add summary/documentation to overloaded methods to prevent sphagetti*
+```csharp
+class MainClass {
+	public void Method() {
+		/// <summary>
+		/// Default non-overload. No params
+		/// </summary>
+        Console.WriteLine("Empty overload..");
+    }
+
+    public void Method(int param1) {
+		/// <summary>
+		/// Overload 1. Enter int.
+		/// </summary>        
+        Console.WriteLine($"Overload 1: {param1}");
+	}
+	
+     public void Method(int param1, string param2) {		
+		/// <summary>
+		/// Overload 2. Requires int and param. Concatenates param1 and 2
+		/// </summary>        
+        Console.WriteLine($"Overload 2: {param1}, {param2}");
+    }
+}
+```
