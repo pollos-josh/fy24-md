@@ -1,3 +1,5 @@
+[[Bootcamp Notes]]
+---
 # .NET Core
 Cross platform open-source dev environment for building different types of applications.
 Allows for building on Windows, Linux, and MacOS.

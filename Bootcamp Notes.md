@@ -1,20 +1,15 @@
-# Project Management
+# Bootcamp Notes
+## Project Management
 [[Intro to Project Management]]
 [[Testing]]
 [[Intro to Infra]]
-# Environment
+## Environment
 [[Intro to Environments]]
-# DevOps
+## DevOps
 [[DevOps and Continuous Delivery]]
-# SQL
+## SQL
 [[MySQL Day One]]
 [[MySQL Day Two]]
 
-# 'C#'
+## 'C#'
 [[VS .NET]]
-
----
-# Misc
-![[Pasted image 20231213090316.png]]
-
-**HUUUH**???

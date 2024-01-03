@@ -157,7 +157,7 @@ class SampleClass {
 	}
 }
 ```
-*Useful if you want to keep track of the changes a variable goes through with each method.*
+*Useful if you want to keep the changes a variable goes through with each method.*
 
 ```csharp
 int parameter;
