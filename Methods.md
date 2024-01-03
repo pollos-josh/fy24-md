@@ -160,11 +160,14 @@ class SampleClass {
 *Useful if you want to keep a variable's value throughout many values*
 
 ```csharp
-public void Main() {
-	parameter = 100;	
-}
+int parameter;
 
-public void SampleMain(ref int parameter) {
-	ref para
+public void Method(ref int parameter) {
+	parameter = parameter + 100;	
+ }
+
+public void Main() {
+	parameter = 100;
+	Method(ref parameter);
 }
 ```
