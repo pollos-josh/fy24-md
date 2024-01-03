@@ -179,12 +179,17 @@ class SampleClass {
 	public int SampleMethod() {
 		return 100;
 	}
-	public int SampleMethod2(int param) {
+	public int SampleMethod(int param) {
 		return 100 * param;
 	}
 }
 
-class Main() {
-	public 
+class NewClass() {
+	public void Main() {
+		SampleClass sampleClass = new SampleClass();
+
+		int int1 = sampleClass.SampleMethod(); //returns 100
+		int int2 = sampleClass.SampleMethod(100); //returns 10,000
+	}
 }
 ```
