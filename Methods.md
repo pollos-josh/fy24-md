@@ -171,3 +171,20 @@ public void Main() {
 	Method(ref parameter);
 }
 ```
+
+## Return
+Returns value to caller.
+```csharp
+class SampleClass {
+	public int SampleMethod() {
+		return 100;
+	}
+	public int SampleMethod2(int param) {
+		return 100 * param;
+	}
+}
+
+class Main() {
+	public 
+}
+```

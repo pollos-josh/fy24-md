@@ -1,27 +1,26 @@
 [[Bootcamp Notes]]
 ---
-# .NET Core
+# VS .NET
+## .NET Core
 Cross platform open-source dev environment for building different types of applications.
 Allows for building on Windows, Linux, and MacOS.
 
-# .NET Framework
+## .NET Framework
 Only for Windows applications.
 
-# Common Language Runtime
+## Common Language Runtime
 - Core component of .NET Core. Manages memory, security, execution, etc.
 
-## Visual Studio
+### Visual Studio
 	.NET 8
 		CLR
-## Managed Code
+### Managed Code
 Refers to code that benefits from runtime services and management provided by CLR.
 
-## Unmanaged Code
+### Unmanaged Code
 Refers to code that is not executed and managed by CLR. Typically consists of languages that do not target CLR or code that is directly executed by the OS.
 
-
 ----
-
 # Data Types
 1. **Value Types** - store data directly in memory. *INT, CHAR, BOOL, UDS*
 2. **Reference Types** - stores a reference of location in memory -> actual data.
