@@ -3,7 +3,7 @@
 Functions like a user defined object. A blueprint and defines a behavior.
 Declared with *class*.
 
-```c#
+```csharp
 class Currency {
 	//fields, properties, methods, etc...
 	public string currencyCode {get; set;}
@@ -17,7 +17,7 @@ class Currency {
 ```
 
 New objects are created with:
-```c#
+```csharp
 Currency unitedStatesCurrency = new Currency("USD","$");
 Currency philippinesCurrency = new Currency("PHP", "₱");
 

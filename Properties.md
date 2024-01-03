@@ -3,7 +3,7 @@
 Flexible member that can read, write, or compute a value of a private field.
 **Enables** public access for *get* and *set* while hiding implementation or verification.
 
-```c#
+```csharp
 class SampleClass
 {
 	public int sampleProperty {get; set;}
@@ -11,7 +11,7 @@ class SampleClass
 ```
 
 
-```c#
+```csharp
 class SampleClass
 {
 	private int _sample;

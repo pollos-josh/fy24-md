@@ -2,7 +2,7 @@
 ---
 Immutable values that are declared upon compile and do not change within program lifetime.
 
-```c#
+```csharp
 public const int sampleConstant = 100;
 ```
 

@@ -2,7 +2,7 @@
 ---
 # Nested Types
 Defined as class within a class.
-```c#
+```csharp
 class SampleClass
 {
 	public class NestedClass
@@ -13,6 +13,6 @@ class SampleClass
 ```
 
 Create an instance with
-```c#
+```csharp
 SampleClass.NestedClass nestedClass = new SampleClass.NestedClass();
 ```

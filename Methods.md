@@ -1,8 +1,8 @@
 [[Classes]]
 ---
-C# Functions. Contains a series of statements or code to perform.
+csharp Functions. Contains a series of statements or code to perform.
 
-```c#
+```csharp
 class SampleClass 
 {
 	public void Method()
@@ -12,7 +12,7 @@ class SampleClass
 }
 ```
 
- ```c#
+ ```csharp
 namespace Demo
 {
     class Program

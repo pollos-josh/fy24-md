@@ -47,13 +47,13 @@ Refers to code that is not executed and managed by CLR. Typically consists of la
 ## Custom Types
 - User defined data types.
 ## [[Classes]]
-```C#
+```csharp
 class SampleClass {
 	//class members go here
 }
 ```
 
-```C#
+```csharp
 class SampleStruct {
 	//structure members go here
 }
@@ -62,7 +62,7 @@ class SampleStruct {
 ## Variables
 - Used to store and manipulate data.
 
-```c#
+```csharp
 int age;
 string firstName;
 double price = 50;
@@ -71,7 +71,7 @@ float num = 123.40f
 ```
 
 ## Implicit Data
-```C#
+```csharp
 var implicitly1 = 100;
 var implicitly2 = "abc";
 var implicitly3 = true;
@@ -81,20 +81,20 @@ var implicitly3 = true;
 ## Nullable Type
 Can accept null values
 
-```c#
+```csharp
 Nullable<int> variable = 10;
 bool? = null;
 ```
 
 ## Namespaces
-```C#
+```csharp
 System.Console.WriteLine("HELLO WORLD!");
 using System;
 ...
 	Console.WriteLine("Hello World!");
 ```
 
-```c#
+```csharp
 namespace MyNamespace {
 	class Program {
 		MyNamespace2.Program Program2;
@@ -110,7 +110,7 @@ namespace MyNamespace2 {
 }
 ```
 
-```c#
+```csharp
 using MyNamespace
 
 namespace Demo {
@@ -132,7 +132,7 @@ namespace MyNamespace {
 
 ## Structures
 suitable for representing values with small mem. requirements.
-```c#
+```csharp
 namespace Demo {
 	class Program {
 		static void Main(string[] args) {
@@ -148,7 +148,7 @@ struct Currency {
 }
 ```
 
-```c#
+```csharp
 struct Currency {
 	private string currencyCode;
 	private string currencySymbol;

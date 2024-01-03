@@ -2,7 +2,7 @@
 ---
 A variable that is declared directly in a class or struct.
 
-```C#
+```csharp
 class SampleClass
 {
 	private string _sampleField;
