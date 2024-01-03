@@ -46,3 +46,4 @@ Structs are smaller and faster in memory.
 - [[Nested Types]]
 - [[Static]]
 - [[Anonymous Type]]
+- [[Enum]]

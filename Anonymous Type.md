@@ -7,4 +7,4 @@ Enables the creation of objects without writing a class definition for the data 
 var sampleObject = new { Property1 = "first", Property2 = "second" };
 ```
 
-It's mainly used for Temporary Data Structures and fast Testing and *Prototyping*.
+It's mainly used for *Temporary Data Structures* and fast *Testing* and *Prototyping*.
