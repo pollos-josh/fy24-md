@@ -15,4 +15,4 @@
 [[VS .NET]]
 
 ## C# Leetcode
-[[two sum]]
+[[CSharp Solutions and Syntax]]
