@@ -124,5 +124,25 @@ public class Solution {
 
 However, a more modern approach is by using `dictionary`:
 ```csharp
-public class
+public class Solution {
+	public IList<IList<string>> GroupAnagrams(string[] strs) {
+		public Dictionary<string, List<string>> dictionary = new Dictionary<string, List<string>>();
+		foreach (string str in strs) {
+			string sortedWord = SortString(str);
+
+			if (!dictionary.ContainsKey(sortedWord)) {
+				dictionary[sortedWord] = new List<string>(); // if sorted word is not in dictionary, make new list
+			}
+			
+			dictionary[sortedWord].Add(str); // add current string to anagram group
+		}
+		return new List<IList<string>>(dictionary.Values); // return anagram groups as list
+	}
+
+	public static string SortString(string input) {
+        char[] characters = input.ToCharArray();
+        Array.Sort(characters);
+        return new string(characters);
+    }
+}
 ```
