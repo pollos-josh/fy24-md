@@ -87,7 +87,8 @@ public class Solution {
 	public IList<IList<string>> GroupAnagrams(string[] strs) {
 		Hashtable hashTable = new Hashtable();
 		for (int i = 0; i < strs.Length; i++) {
-			sortedWord = hashTable.
+			sortedWord = SortString(strs[i]);
+			
 		}
 		
 	}
