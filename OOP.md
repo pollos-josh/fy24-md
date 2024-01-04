@@ -2,4 +2,45 @@
 ---
 # Object Oriented Programming
 ## Encapsulation
-The first pillar of OOP. It means groups of related properties, fields, 
+The first pillar of OOP. It means groups of related properties, methods, etc. are treated as single objects or units.
+
+## Inheritance 
+The second pillar. Enables you to reuse, extend, and modify the behavior of pre-defined
+classes with other classes.
+
+### `Protected`
+Makes a class accessible within a class and by derived class instances.
+```csharp
+public class BaseClass {
+	protected void SampleMethod() {
+	 // code
+	}
+}
+
+public class DerivedClass : BaseClass {
+	SampleMethod(); //successfull call
+}
+
+public class NewClass {
+	SampleMethod(); //error: inaccessible
+}
+```
+
+## Polymorphism
+Derived classes inherits all properties, fields, methods, etc. from a base class.
+```csharp
+public class BaseClass {
+	new void SampleMethod(){
+		//code
+	}
+	new virtual void SampleMethod() {
+		//code
+	}
+}
+
+public class DerivedClass : BaseClass {
+	SampleMethod();
+	public new void SampleMethod(); //replace method behavior
+	public 
+}
+```
