@@ -68,3 +68,5 @@ public class DerivedClass : BaseClass {
 	}
 }
 ```
+
+## [[Object Composition]]

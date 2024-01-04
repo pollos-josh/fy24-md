@@ -42,7 +42,8 @@ Refers to code that is not executed and managed by CLR. Typically consists of la
 	- bool
 	- object
 	- string
-
+- `value types` throw errors if value if NULL.
+- `reference types` do not throw errors if NULL.
 
 
 ## Custom Types
