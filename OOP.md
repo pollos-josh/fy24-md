@@ -6,8 +6,20 @@ Handles complexity by hiding unnecessary complex logic from the user.
 Enables the user to implement more complex actions on top of the code without
 needing to think about the underlying logic.
 
-```psuedocode
+```csharp
+public class CoffeeMachine {
+    private Map<CoffeeSelection, CoffeeBean> beans;
 
+    public CoffeeMachine(Map<CoffeeSelection, CoffeeBean> beans) { 
+         this.beans = beans
+    }
+
+    public Coffee brewCoffee(CoffeeSelection selection) throws CoffeeException {
+        Coffee coffee = new Coffee();
+        System.out.println(“Making coffee ...”);
+        return coffee;
+    }
+}
 ```
 
 ## Encapsulation
