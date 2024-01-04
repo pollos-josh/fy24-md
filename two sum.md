@@ -22,5 +22,23 @@ But looking for a more efficient algorithm in `O(n)` linear time, hash maps are 
 
 `Dictionary` syntax
 ```csharp
-Dictionary <datatype, datatype> dictName = new 
+Dictionary <datatype, datatype> dictName = new Dictionary<datatype, datatype>();
+
+dictName.add(arg1, arg2); // add to dictionary
+dictName.ContainsKey(arg); // check if arg is in hashmap
+```
+
+```csharp
+public class Solution {
+    public int[] TwoSum(int[] nums, int target) {
+		Dictionary<int, int> hashMap = new Dictionary<int, int>();
+	
+		for (i = 0; int < nums.length; i++) {
+			for (j = i + 1; j < nums.length; j++) {
+				compare = target - nums[i];
+				
+			}
+		}
+    }
+}
 ```
