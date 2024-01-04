@@ -13,3 +13,6 @@
 
 ## 'C#'
 [[VS .NET]]
+
+## C# Leetcode
+[[two sum]]
