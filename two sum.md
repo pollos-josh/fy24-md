@@ -18,8 +18,9 @@ public class Solution {
 
 
 But looking for a more efficient algorithm in `O(n)` linear time, hash maps are still required.
+*ref: [[two sum python]]*
 
-ref: [[two sum python]]
+`Dictionary` syntax
 ```csharp
-
+Dictionary <datatype, datatype> dictName = new 
 ```
