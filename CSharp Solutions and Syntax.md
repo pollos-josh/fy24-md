@@ -53,3 +53,28 @@ public class Solution {
     }
 }
 ```
+
+## Valid Anagram
+Anagram checks involve some kind of array sorting. Push both sorted strings into arrays then compare them.
+
+| a   | n   | a   | g   | r   | a   | m   |
+| --- | --- | --- | --- | --- | --- | --- |
+| m   | a    | r    | g    | a    | n    | a    |
+
+```csharp
+char[] sArray = s.ToCharArray();
+char[] tArray = t.ToCharArray();
+
+Array.Sort(sArray);
+Array.Sort(tArray);
+
+if (sArray.Length != tArray.Length) {
+	return false;
+}
+
+for (int i = 0; i < sArray.Length; i++) {
+	if (sArray[i] != tArray[i]) {
+		return false;
+	}
+}
+```
