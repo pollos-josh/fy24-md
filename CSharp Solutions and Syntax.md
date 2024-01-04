@@ -1,6 +1,7 @@
 [[Bootcamp Notes]]
 ---
 # C# Solutions and Syntax
+## Two Sum
 First solution I tried is a typical `for` loop.
 ```csharp
 public class Solution {
