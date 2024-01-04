@@ -78,3 +78,16 @@ for (int i = 0; i < sArray.Length; i++) {
 	}
 }
 ```
+
+## Group Anagrams
+Looking at my previous solution in python (ref: [[group anagrams]]), the most efficient solution is a `hashMap` then a `for` loop to group them together.
+
+```csharp
+public class Solution {
+	public IList<IList<string>> GroupAnagrams(string[] strs) {
+		Hashtable hashTable = new Hashtable();
+
+		
+	}
+}
+```
