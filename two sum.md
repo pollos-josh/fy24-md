@@ -28,6 +28,7 @@ dictName.add(arg1, arg2); // add to dictionary
 dictName.ContainsKey(arg); // check if arg is in hashmap
 ```
 
+**doesn't work**
 ```csharp
 public class Solution {
     public int[] TwoSum(int[] nums, int target) {
@@ -35,10 +36,16 @@ public class Solution {
 	
 		for (i = 0; int < nums.length; i++) {
 			for (j = i + 1; j < nums.length; j++) {
-				compare = target - nums[i];
-				
+				int compare = target - nums[i];
+				if (hashMap.ContainsKey(compare)) {
+					return new int[] {hashMap[compare], i};
+				}
+				if (!hashMap.ContainsKey(nums[i])) {
+					hashMap[nums[i]] = 1
+				}
 			}
 		}
+		return new int[] {2};
     }
 }
 ```
