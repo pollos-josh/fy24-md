@@ -88,7 +88,7 @@ public class Solution {
 		Hashtable hashTable = new Hashtable();
 		for (int i = 0; i < strs.Length; i++) {
 			sortedWord = SortString(strs[i]);
-			
+			hashTable[sortedWord].Add(i);
 		}
 		
 	}
@@ -98,4 +98,31 @@ public class Solution {
 		return new string(characters);
 	}
 }
+```
+
+Corrected code:
+```csharp
+public class Solution {
+    public IList<IList<string>> GroupAnagrams(string[] strs) {
+        Hashtable hashTable = new Hashtable();
+        foreach (string str in strs) {
+            string sortedWord = SortString(str);
+            if (!hashTable.ContainsKey(sortedWord)) {
+                hashTable[sortedWord] = new List<string>();
+            }
+            ((List<string>)hashTable[sortedWord]).Add(str);
+        }
+        return new List<IList<string>>(hashTable.Values.Cast<IList<string>>());
+ }
+    public static string SortString(string input) {
+        char[] characters = input.ToCharArray();
+        Array.Sort(characters);
+        return new string(characters);
+    }
+}
+```
+
+However, a more modern approach is by using `dictionary`:
+```csharp
+public class
 ```
