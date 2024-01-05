@@ -20,7 +20,7 @@ long longVar = 100;
 int intVar = (int)longVariable;
 ```
 
----
+# Is and As
 ## Is
 Evaluates type compatibility.
 ```csharp
@@ -41,4 +41,21 @@ if (derivedObject != null){
 	derivedObject.SampleDerivedMethod();
 	//...
 }
+```
+
+# Boxing and Unboxing
+*Boxing* implicit conversion of a value type to the type object.
+```csharp
+int myInteger = 100;
+
+//Boxing copies the value of myInteger to myObject
+object myObject = myInteger;
+```
+
+*Unboxing* explicit conversion from value object to value type.
+```csharp
+object myObject = 100;
+
+//Boxing copies the value of myObject to myInteger 
+int myInteger = (int)myObject;
 ```
