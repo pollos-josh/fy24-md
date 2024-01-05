@@ -1,5 +1,6 @@
 [[OOP]]
 ---
+ - [ ] TODO: Check if reviewed.
 # Object Composition
 ## Association
 Relationship of data. Think of how database schemas function.
@@ -56,5 +57,53 @@ Console.WriteLine($"Student: {enrollment1.Student.Name}, Course: {enrollment1.Co
 ## Aggregation
 A specialized version of `Association` where all objects have their own lifecycle but there is ownership. The child object cannot belong to another parent object.
 
+```csharp
+public class University {
+    public List<Department> Departments { get; set; }
+    // Other university properties and methods
+}
+
+public class Department {
+    public string Name { get; set; }
+    public List<Professor> Professors { get; set; }
+    // Other department properties and methods
+}
+
+public class Professor {
+    public string Name { get; set; }
+    // Other professor properties and methods
+}
+
+```
+
+- **University** has multiple **Departments**.
+- Each **Department** has multiple **Professors**.
+ Here, the relationship between University and Departments, and between Departments and Professors, demonstrates aggregation. Departments exist independently and can exist without the University. Professors are associated with Departments but can exist outside a specific department or even the university.
+
 ## Composition
 A specialized version of `Aggregation` where child objects do not have lifecycles without parent objects. If parent objects are deleted, child objects are also deleted.
+
+```csharp
+public class Computer {
+    public CPU Cpu { get; set; }
+    public RAM Ram { get; set; }
+    public HardDrive HDD { get; set; }
+    // Other computer properties and methods
+}
+
+public class CPU {
+    // CPU properties and methods
+}
+
+public class RAM {
+    // RAM properties and methods
+}
+
+public class HardDrive {
+    // Hard Drive properties and methods
+}
+
+```
+
+- A **Computer** consists of a **CPU**, **RAM**, and **Hard Drive**.
+- If the computer is destroyed, its components (CPU, RAM, Hard Drive) also cease to exist as a functional part of that computer.
