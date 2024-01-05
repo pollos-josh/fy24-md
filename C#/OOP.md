@@ -120,3 +120,7 @@ public partial class SampleClass {
 	}
 }
 ```
+
+## [[Generic Type]]
+
+# [[Type Conversions]]
