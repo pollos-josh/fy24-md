@@ -70,8 +70,11 @@ public class DerivedClass : BaseClass {
 ```
 
 ## [[Object Composition]]
+- Association
+- Aggregation
+- Composition
 
-# Abstracts and Interfaces
+# Abstracts and Interfaces and Other Modifiers
 ## [[Interface]]
 
 ## [[Abstract]]
@@ -104,3 +107,16 @@ class SampleClassB : SampleClass {
 ```
 *castration* 🥶
 
+## Partial
+Can be used to split the definition of a `class` or a `struct`, `interface` or `method` over two or more source files.
+```csharp
+public partial class SampleClass {
+	public partial void Sample Method();
+}
+
+public partial class SampleClass {
+	partial void SampleMethod() {
+		// code def
+	}
+}
+```
