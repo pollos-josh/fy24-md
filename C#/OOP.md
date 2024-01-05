@@ -71,4 +71,36 @@ public class DerivedClass : BaseClass {
 
 ## [[Object Composition]]
 
+# Abstracts and Interfaces
 ## [[Interface]]
+
+## [[Abstract]]
+
+The main difference between the two is that in `abstract`, you can only override the method, not change the implementation. 
+
+`interface` however, you have to define an implementation when you call it. 
+
+This is because you cannot declare implementations in the `interface` class.
+
+## Sealed
+Sealed classes stops further inheritance.
+
+```csharp
+class BaseClass {
+	public virtual void SampleMethod() {
+		//code
+	}
+}
+
+class SampleClass : BaseClass {
+	public sealed override void SampleMethod() {
+		//code
+	}
+}
+
+class SampleClassB : SampleClass {
+	public override voide SampleMethod() {} // Invalid
+}
+```
+*castration* 🥶
+
