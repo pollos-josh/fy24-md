@@ -1,12 +1,57 @@
 [[ADO .NET]]
 ---
 
+# Basic ADO.NET Syntax
+
+## Establishing a connection
 ```csharp
-command object.ExecuteReader() //data retrieval
-command object.ExecuteNonQuery() //data manipulation
-command object.ExecuteScalar() //query with aggregate functions
+using System.Data.SqlClientl
+using Microsoft.Extensions.Configuration
+
+IConfiguration configuration = new ConfigurationBuilder()
+		.AddJsonFile("appsettings.json", false, true)
+		.Build();
+
+string? connectionString = configuration.getConnectionString("LocalSqlConnection");
+
+using (SqlConnection connection = new SqlConnection("LocalSqlConnection")) {
+	//sql
+}
 ```
-Basic ADO.NET Syntax
+*this whole code block just establishes a connection with the database in `appsettings.json`*
+
+## Executing Queries
+For commands that don't return data e.g. `INSERT`, `UPDATE`, `DELETE`
+```csharp
+string query = 'INSERT INTO table_name (Col1, Col2) VALUES (val1, val2)';
+SqlCommand command = new SqlCommand(query, connection);
+
+command.Parameters.AddWithValue("@Value1", value1);
+command.Parameters.AddWithValue("@Value2", value2);
+
+connection.Open();
+int rowsAffected = command.ExecuteNonQuery();
+connection.Close();
+```
+
+For commands that return data `SELECT`
+```csharp
+string query = "SELECT Col1, Col2 FROM TableName";
+SqlCommand command = new SqlCommand(query, connection);
+
+connection.Open();
+SqlDataReader = new SqlCommand(query, connection);
+
+while (reader.Read()) {
+	var value1 = reader["Column1"];
+	var value2 = reader["Column2"];
+}
+
+reader.Close();
+connection.Close();
+```
+
+------
 
 ```csharp
 IConfiguration configuration = new ConfigurationBuilder()
