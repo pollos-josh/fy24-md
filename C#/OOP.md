@@ -124,3 +124,6 @@ public partial class SampleClass {
 ## [[Generic Type]]
 
 # [[Type Conversions]]
+Converting one type to another.
+
+# [[Null Checking]]

@@ -17,3 +17,8 @@
 
 ## C# Leetcode
 [[CSharp Solutions and Syntax]]
+
+# C# Exercises
+[[Exercise 1]]
+[[Exercise 2]]
+[[Exercise 3]]
