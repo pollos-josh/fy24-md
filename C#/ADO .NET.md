@@ -13,4 +13,4 @@ string connectionString = "Data Source=.Initial"
 ```
 
 # Best Practices
-- Don't hardcode conne
+- Don't hardcode connection string in source code. It should be in `appsettings.json` with other configuration settings/files.
