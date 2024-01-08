@@ -3,6 +3,7 @@
 # ADO .NET
 Allows devs to interact with databases, read and write data, and perform typical database actions.
 
+## [[CSharp SQL Syntax]]
 ## Data Providers
 Specific libraries provided by Microsoft to facilitate data access and interaction with database systems.
 ## Data Set
