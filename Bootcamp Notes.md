@@ -16,6 +16,7 @@
 [[OOP]]
 
 ## C# Leetcode
+[[ADO .NET]]
 [[CSharp Solutions and Syntax]]
 
 # C# Exercises
