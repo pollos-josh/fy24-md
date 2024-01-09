@@ -53,8 +53,7 @@ public class Program {
 
 # [[Lambda Expression]]
 
-
-
+[[ADO.NET Entity Framework]]
 ---
 # Best Practices
 - Don't hardcode connection string in source code. It should be in `appsettings.json` with other configuration settings/files.
