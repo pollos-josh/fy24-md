@@ -57,6 +57,7 @@ static void Main(string[] args) {
 }
 ```
 
+### Sample LINQ Statements
 ```csharp
  //sample LINQ statements
 var olderThan25 = people.Where(person => person.Age > 25);
@@ -74,6 +75,81 @@ A more direct syntax to call LINQ operator methods, and passing lambda expressio
 IQueryable<Customer> custQuery = dbCustomers.Where(Cust => cust.City == 'Manila').Select(cust => cust);
 ```
 
+**Customer list**
 ```csharp
-var cust
+private static IEnumerable<Customer> customers = new List<Customer>
+{
+	new Customer{ CustomerId = 1, FirstName = "Emma", LastName = "Lowton", Age= 23, Email = "emma.lowton@avanade.com", Address ="5030 Blue Ridge Dr. Burbank", Active = true },
+	new Customer{ CustomerId = 2, FirstName = "Allen", LastName = "Brewer", Age = 30, Email = "allen.brewer@avanade.com", Address ="5375 Clearland Circle Seattle", Active = true },
+	new Customer{ CustomerId = 3, FirstName = "William", LastName = "Bowman", Age = 25, Email = "wiliam.bowman@avanade.com", Address ="9537 Ridgewood Drive", Active = false },
+	new Customer{ CustomerId = 4, FirstName = "Burton", LastName = "Calvin", Age = 36, Email = "burton.calvin@avanade.com", Address ="6578 Woodhaven Ln. Everett", Active = true },
+	new Customer{ CustomerId = 5, FirstName = "Royce", LastName = "Freeland", Age = 21, Email = "royce.freeland@avanade.com", Address ="9784 Mt Etna Drive Edmons Renton", Active = true }
+};
+
 ```
+
+
+## LINQ and SQL
+
+```csharp
+var customerLastNames = customers.Select(customer => customer.LastName); 
+```
+*This pushes `customer.LastName` from `IEnumerable<Customer> customers` using `Select`.*
+
+ It's easier to think about this as a longer SQL statement. Notice that `SELECT CustomerName FROM Customers` is similar to the first code block, just rearranged. 
+
+Another implementation is:
+ ```csharp
+var selectedCustomers = customer.Select(customer => customer);
+
+foreach (Customer selectedCustomer in selectedCustomers) {
+	Console.WriteLine("Customer Name: {0} {1}", selectedCustomer.FirstName, selectedCustomer.LastName);
+}
+```
+*Return the whole `customer` object with `FirstName` and `LastName`.*
+
+### Headtrauma and Nosebleed
+We can start going crazy from here with `Where`. Similar to `WHERE` in SQL, it's an additional condition statement for filtering.
+```csharp
+static void Main(string[] args) {
+	var selectedCustomers =
+		customers
+		.Where(customer => customer.Active == true)
+		.Select(customer => new { customer.FirstName, customer.LastName }); // selects customer name where `Active` is equal to true
+
+	// loop through results
+	foreach (var selectedCustomer in selectedCustomers) {
+		Console.WriteLine("Customer Name: {0} {1}", selectedCustomer.FirstName, selectedCustomer.LastName);
+	}
+
+	Console.Read();
+}
+```
+
+
+## LINQ Aggregators
+Similar to SQL syntax, LINQ also has aggregators `Distinct`, `Count`
+```csharp
+static void Main(string[] args) {
+	int[] numbers = { 2, 2, 3, 4, 5, 5, 6, 6, 7, 7 }
+
+	int distinct = numbers.Distinct().Count();
+
+	Console.WriteLine("There are {0} unique numbers.", count); // this prints the first method in int distinct
+
+	IEnumerable<int> distinctNumbers = numbers.Distinct(); // pushes distinct numbers into a List called distinctNumbers
+
+	foreach (var distinctNumber in distinctNumbers) { // loops through each distinct number
+		Console.WriteLine(distinctNumber); // and prints it
+	}
+}
+```
+
+Other aggregators like `Sum`, `Min`, `Max`, and `Average` are hardcoded into C#.
+
+```csharp
+int minimum = numbers.Min();
+int maximum = numbers.Max();
+int summation = numbers.Sum();
+int average = numbers.Average();
+ ```
