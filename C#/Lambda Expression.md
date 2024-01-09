@@ -146,7 +146,6 @@ static void Main(string[] args) {
 ```
 
 Other aggregators like `Sum`, `Min`, `Max`, and `Average` are hardcoded into C#.
-
 ```csharp
 int minimum = numbers.Min();
 int maximum = numbers.Max();
