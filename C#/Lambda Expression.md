@@ -1,5 +1,6 @@
 [[ADO .NET]]
 ---
+##### might have to pray to [[God]] for this one.
 
 # Lambda Expressions
 `=>` allows attaching anonymous methods that can contain expressions and statements.
@@ -29,21 +30,35 @@ MyDelegate myDelegate = new MyDelegate(
 
 
 ## LINQ
-Language Integrated Queries are higher level statements enabling SQL-like syntax using `=>`.
+Language Integrated Queries are higher level statements enabling SQL-like syntax 
 
 ```csharp
+// sample data class
 public class Person {
-	public string name {get;set}
-	public int age {get;set}
+    public string Name { get; set; }
+    public int Age { get; set; }
 }
 
+// insert sample data
 List<Person> people = new List<Person>{
-	new Person {Name = "Alice", Age = 30},
-	new Person {Name = "Jason", Age = 10},
-	new Person {Name = "Schlatt", Age = 75}
+    new Person { Name = "Alice", Age = 30 },
+    new Person { Name = "Jason", Age = 10 },
+    new Person { Name = "Schlatt", Age = 75 }
 };
 
-//sample LINQ statements
+static void Main(string[] args) {
+    IEnumerable<Person> persons = // LINQ statement to get sample data
+		from person in people
+        select person;
+
+    foreach (Person person in persons) {
+        Console.WriteLine("Name: {0}, Age: {1}", person.Name, person.Age);
+    }
+}
+```
+
+```csharp
+ //sample LINQ statements
 var olderThan25 = people.Where(person => person.Age > 25);
 var namesOnly = people.Select(person => person.Name);
 var sortedByAge = people.OrderBy(person => person.Age);
@@ -52,6 +67,13 @@ var namesOfOlderThan25Sorted = people
     .Where(person => person.Age > 25)
     .OrderBy(person => person.Name)
     .Select(person => person.Name);
+```
 
+A more direct syntax to call LINQ operator methods, and passing lambda expressions as parameters
+```csharp
+IQueryable<Customer> custQuery = dbCustomers.Where(Cust => cust.City == 'Manila').Select(cust => cust);
+```
 
+```csharp
+var cust
 ```
