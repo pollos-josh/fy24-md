@@ -13,7 +13,6 @@ Specific libraries provided by Microsoft to facilitate data access and interacti
 string connectionString = "Data Source =.; Initial Catalog = DemoDatabase; Integrated Security = True"; 
 ```
 
-
 ## Delegate
 A type that represents references to methods with a particular parameter list and return type. When you instantiate a delegate, you can associate its instance with any method with a compatible signature and return type.
 
@@ -30,5 +29,32 @@ class Calculator {
 	}
 }
 ```
+
+It's a way to quickly call methods.
+
+```csharp
+public class Program {
+	public static int PerformOperation(int x, int y, myDelegate operation){
+		return operation(x, y);
+	}
+	
+	public static void Main(string[] args) {
+		
+		Calculator calculator = new Calculator();
+		
+		myDelegate add = calculator.Add;
+		myDelegate subtract = calculator.Minus;
+		
+		int resultAdd = (10, 5, add);
+		int resultSubtract = (10, 5, subtract);
+	}
+}
+```
+
+
+
+
+
+---
 # Best Practices
 - Don't hardcode connection string in source code. It should be in `appsettings.json` with other configuration settings/files.
