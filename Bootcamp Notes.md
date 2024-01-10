@@ -19,6 +19,7 @@
 [[ADO .NET]]
 [[CSharp Solutions and Syntax]]
 
+---
 # C# Exercises
 [[Exercise 1]]
 [[Exercise 2]]

@@ -9,3 +9,10 @@ A technique for transforming data from a database into data types that can be us
 
 ## ADO .NET Entity Framework
 An auto-generated data access layer. It provides object-relational mapping services by mapping relational data. Eliminates the need for most of the data-access code that is usually needed to write.
+
+---
+# Code First
+Focuses on the domain of your application and start creating classes for your domain entity and then Entity Framework will create the database from your code.
+
+# Database First
+It creates model codes from the database in the project and those classes become the link between the database and the controller.
