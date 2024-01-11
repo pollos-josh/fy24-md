@@ -38,18 +38,22 @@ namespace Exercise_5
 	
 	        bool leadingZeroFound = false; // Flag to track leading zeros
 	
-	        for (int j = digits.Length - 1; j >= 0; j--) // initialize pointer to last digit
-	        {
-	            if (digits[j] == 0 && !leadingZeroFound)
-	            {
-	                continue; // Skip leading zeros
-	            }
+			for (int i = 0; i < digits.Length; i++) // initialize pointer to first digit
+			{
+				for (int j = digits.Length - 1; j > 0; j--) // initialize pointer to last digit
+				{
+					if (digits[j] == 0 && !leadingZeroFound)
+					{
+						continue; // Skip leading zeros
+					}
 	
-	            leadingZeroFound = true; // Set the flag once a non-zero digit is found
+					leadingZeroFound = true; // Set the flag once a non-zero digit is found
 	
-	            // push digits[j] into the new array results[] 
-	            results[resultIndex++] = digits[j];
-	        }
+					// push digits[j] into the new array results[] 
+					results[i] = digits[j];
+					break; // Break to exit the inner loop after pushing a non-zero digit
+				}
+			}
 	
 	        // Construct the reversed integer directly
 	        int finalResults = 0;
@@ -103,7 +107,6 @@ namespace Exercise_5
         }
     }
 }
-
 ```
 
 
@@ -114,8 +117,7 @@ Make a class `Program` with `public void Main()` then call the `Solution` class.
 
 There is also something wrong with the logic here
 ```csharp
-
-public class Solution
+ public class Solution
 {
 	public int Method(int N)
 	{
@@ -179,6 +181,7 @@ static int GetValidIntegerInput(int prompt)
 
 ```
 
+---
 # Fixed code
 Turns out, there were duplicated `Console.ReadLine()` and `WriteLine()` methods that were messing with the loop input. The main issue was with `Main` passing on the wrong variables and `GetValidIntegerInput` having `int prompt`.
 ```csharp
@@ -190,22 +193,58 @@ class Program
 		Solution solution = new Solution();
 
 		// Example usage:
-		Console.WriteLine("Enter a positive integer:");
-		int userInput = int.Parse(Console.ReadLine());
+		Console.WriteLine("Enter a positive integer:"); <---
+		int userInput = int.Parse(Console.ReadLine()); <---
 
-		int result = solution.Method(userInput); 
+		int result = solution.Method(userInput); <---
 ///...
 }
 ```
 
 ```csharp
-static int GetValidIntegerInput(int prompt)
+static int GetValidIntegerInput(int prompt) <---
 {
-	int result;
+	int result; 
 	bool isValidInput = false;
 ```
 
 `GetValidIntegerInput` is supposed to get `string prompt` from `Main`. It's supposed to print a string to prompt the user to input a variable. This got broken in transitioning from a *ConsoleApp* to a *ClassLibrary*.
+
+Also, the loop algorithm is also broken. I couldn't have thought about this.
+```csharp
+for (int i = 0; i < digits.Length; i++) // initialize pointer to first digit
+{
+	for (int j = digits.Length - 1; j > 0; j--) <---
+	{
+		if (digits[j] == 0 && !leadingZeroFound)
+		{
+			continue; // Skip leading zeros
+		}
+
+		leadingZeroFound = true; // Set the flag once a non-zero digit is found
+
+		// push digits[j] into the new array results[] 
+		results[i] = digits[j]; <---
+		break; // Break to exit the inner loop after pushing a non-zero digit
+	}
+}
+```
+
+There is also no need to have a nested `for` loop. Here is the corrected loop
+```csharp
+for (int j = digits.Length - 1; j >= 0; j--) // initialize pointer to last digit
+{
+	if (digits[j] == 0 && !leadingZeroFound)
+	{
+		continue; // Skip leading zeros
+	}
+
+	leadingZeroFound = true; // Set the flag once a non-zero digit is found
+
+	// push digits[j] into the new array results[] 
+	results[resultIndex++] = digits[j];
+}
+```
 
 Finally, parsing an `int` from a `string` can lead to unexpected results, leading to duplicated `array` elements e.g.
 ```
@@ -213,8 +252,18 @@ N = 250
 result = 55
 ```
 
-It's better to construct 
-Here is the corrected code:
+It's better to construct the integer directly like:
+```csharp
+int finalResults = 0;
+for (int i = 0; i < resultIndex; i++)
+{
+	finalResults = finalResults * 10 + results[i];
+}
+return finalResults;
+```
+
+## Here is the corrected code:
+
 ```csharp
 using System;
 using System.Linq;
@@ -231,7 +280,7 @@ namespace Exercise_5
             //Console.WriteLine("Enter a positive integer:");
             int userInput = Solution.GetValidIntegerInput("Enter a positive integer: ");
 
-            Console.WriteLine("The reversed integer is: " + solution.Method(userInput));
+            Console.WriteLine("The reversed integer is: " + solution.Method(userInput)); // Don't forget to write line
             Console.ReadKey(); // To prevent the console window from closing immediately
         }
     }
@@ -312,6 +361,4 @@ namespace Exercise_5
         }
     }
 }
-
-
 ```
