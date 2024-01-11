@@ -106,4 +106,5 @@ namespace Exercise_5
 
 
 # Takeaways
-I originally pushed this as a class libray.
+I originally pushed this as a class library. This is wrong.
+Make a class `Program` with `public void Main()` then call the ``
