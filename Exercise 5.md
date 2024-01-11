@@ -1,7 +1,9 @@
 [[Bootcamp Notes]]
 ---
 
-Reverse an int without leading zeros. Failed this one
+Reverse an int without leading zeros. 
+*Failed this one*
+
 ```csharp
 using System;
 using System.Linq;
@@ -105,6 +107,74 @@ namespace Exercise_5
 ```
 
 
-# Takeaways
+# What went wrong...? 
+
 I originally pushed this as a class library. This is wrong.
-Make a class `Program` with `public void Main()` then call the ``
+Make a class `Program` with `public void Main()` then call the `Solution` class.
+
+There is also something wrong with the logic here
+```csharp
+
+public class Solution
+{
+	public int Method(int N)
+	{
+		int n = GetValidIntegerInput(N); // parse input
+		int[] digits = GetDigitsArray(n);
+		// push individual digits into an array
+		int[] results = new int[digits.Length];
+
+		bool leadingZeroFound = false; // Flag to track leading zeros
+
+		for (int i = 0; i < digits.Length; i++) // initialize pointer to first digit
+		{
+			for (int j = digits.Length - 1; j > 0; j--) // initialize pointer to last digit
+			{
+				if (digits[j] == 0 && !leadingZeroFound)
+				{
+					continue; // Skip leading zeros
+				}
+
+				leadingZeroFound = true; // Set the flag once a non-zero digit is found
+
+				// push digits[j] into the new array results[] 
+				results[i] = digits[j];
+				break; // Break to exit the inner loop after pushing a non-zero digit
+			}
+		}
+		string concatString = string.Concat(results); // Concatenate the array into a string
+		int finalResults = int.Parse(concatString); // Parse the string into an integer
+
+		Console.WriteLine($"Is Decimal Reverse?: {!leadingZeroFound}");
+
+		return finalResults;
+	}
+}
+```
+
+Maybe there's something wrong with `GetValidIntegerInput()`. I modified it a bit for this project.
+```csharp
+static int GetValidIntegerInput(int prompt)
+{
+	int result;
+	bool isValidInput = false;
+	
+	do
+	{
+		Console.WriteLine(prompt);
+		string input = Console.ReadLine();
+	
+		if (!int.TryParse(input, out result) || result < 0 || result > 1000000000)
+		{
+			Console.WriteLine("Invalid input. Please enter a valid positive integer less than 1,000,000,000.");
+		}
+		else
+		{
+			isValidInput = true;
+		}
+	} while (!isValidInput); // keep throwing errors and asking for input until the input is valid
+	
+	return result;
+}
+
+```
