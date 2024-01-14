@@ -27,3 +27,7 @@
 [[Exercise 3]]
 [[Exercise 4]]
 [[Exercise 5]]
+
+# Web Dev
+## Web Dev Essentials
+[[HTML]]
