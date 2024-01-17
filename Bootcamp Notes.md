@@ -30,4 +30,4 @@
 
 # Web Dev
 ## Web Dev Essentials
-[[HTML]]
+[[JQuery]]
