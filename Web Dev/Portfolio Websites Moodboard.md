@@ -22,11 +22,8 @@
 
 12) Studio bagaz’ : <https://www.studiobgz.com/>
 
-
 13) By experience : <https://www.byxp.co.uk/>
 
-
 14) Lena steinkühler : <https://www.lenasteinkuehler.com/>
-
 
 15) Paper crowns : <https://papercrowns.com/>
