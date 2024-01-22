@@ -1,4 +1,0 @@
-[[Bootcamp Notes]]
----
-
-## [[JQuery]]
