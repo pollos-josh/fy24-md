@@ -41,7 +41,7 @@ It started all because I didn't fix my database in advance.
 
 Change is the enemy of polymorphism, and this is the most polymorphed out of all polymorphisms.
 
-## Back on the Appalachian Trail
+## Back on the Appalachian Trail (Getting Started)
 Starting from scratch, I made a fresh new solution with `ASP .NET Model-View-Controller`.
 Install all dependencies
 - *EntityFrameworkCore*
@@ -50,7 +50,8 @@ Install all dependencies
 - *EntityFrameworkCore.SqlServer*
 
 Make sure the connection string is in
-```appsettings.json
+```json
+//appsettings.json
 {
   "Logging": {
     "LogLevel": {
@@ -77,4 +78,10 @@ Also add this before `var app = build()`
             options.UseSqlServer(builder.Configuration.GetConnectionString("databaseName")));
 ```
 
-Then add an `MVC Controller Entity Framerwork with Views`
+Then add an `MVC Controller Entity Framerwork with Views` on the Folder Views. 
+*Make sure that you select the main table that you want to work with. It has to have all the necessary relations with other tables or it'll be fucked.*
+
+This generates all the code you need and hopefully, all the spaghetti has been straightened out.
+
+### DON'T EVEN TRY TO MODIFY THE FRAMEWORK YOURSELF. DON'T ADD CONSTRUCTORS OR ANYTHING MANUALLY BECAUSE YOU WILL FUCK UP.
+### USE THE SCAFFOLD. USE THE FRAMEWORK COMMANDS. THANKS.
