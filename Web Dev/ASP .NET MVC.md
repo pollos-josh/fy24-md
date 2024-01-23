@@ -30,3 +30,51 @@ Scaffold-DbContext "Data Source=*server name*;Initial Catalog=*databse name*;Int
         builder.Services.AddDbContext<*dbContextName*>(options => 
             options.UseSqlServer(builder.Configuration.GetConnectionString("databaseName")));
 ```
+
+
+---
+
+# The @item.IslandImage.IslandImageURL Fiasco
+
+It started all because I didn't fix my database in advance.
+**You have to ensure that your database is already fixed beforehand. VERY IMPORTANT**
+
+Change is the enemy of polymorphism, and this is the most polymorphed out of all polymorphisms.
+
+## Back on the Appalachian Trail
+Starting from scratch, I made a fresh new solution with `ASP .NET Model-View-Controller`.
+Install all dependencies
+- *EntityFrameworkCore*
+- *EntityFrameworkCore.Design*
+- *EntityFrameworkCore.Tools*
+- *EntityFrameworkCore.SqlServer*
+
+Make sure the connection string is in
+```appsettings.json
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "Allowed-Hosts": "*" <-- delete this
+  "ConnectionString": "*" <-- replace with this
+}
+```
+
+In Nuget Package Manager console, do the `Scaffold-DbContext` command. Run `Add-Migration`.
+
+In `Program.cs` add
+```csharp
+using Microsoft.EntityFrameworkCore;
+using WebApplication3.Models; //intelli sense should detect what namespace the DbContext Models are in
+```
+
+Also add this before `var app = build()`
+```csharp
+        builder.Services.AddDbContext<*dbContextName*>(options => 
+            options.UseSqlServer(builder.Configuration.GetConnectionString("databaseName")));
+```
+
+Then add an `MVC Controller Entity Framerwork with Views`
