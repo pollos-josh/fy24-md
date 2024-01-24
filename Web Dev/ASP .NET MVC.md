@@ -85,3 +85,6 @@ This generates all the code you need and hopefully, all the spaghetti has been s
 
 ### DON'T EVEN TRY TO MODIFY THE FRAMEWORK YOURSELF. DON'T ADD CONSTRUCTORS OR ANYTHING MANUALLY BECAUSE YOU WILL FUCK UP.
 ### USE THE SCAFFOLD. USE THE FRAMEWORK COMMANDS. THANKS.
+
+# Many-to-Many Relationships
+
