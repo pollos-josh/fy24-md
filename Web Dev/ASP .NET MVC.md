@@ -27,8 +27,8 @@ Scaffold-DbContext "Data Source=*server name*;Initial Catalog=*databse name*;Int
 
 6. Add this before `var app = builder.Build();`
 ```csharp
-        builder.Services.AddDbContext<*dbContextName*>(options => 
-            options.UseSqlServer(builder.Configuration.GetConnectionString("databaseName")));
+builder.Services.AddDbContext<*dbContextName*>(options => 
+	options.UseSqlServer(builder.Configuration.GetConnectionString("databaseName")));
 ```
 
 
@@ -89,4 +89,83 @@ This generates all the code you need and hopefully, all the spaghetti has been s
 # Many-to-Many Relationships
 
 ## The Second Circle of Hell
-After being successful in calling IslandImageURL, I thought everything was gucci, but then Virgil said "Come hit"
+After being successful in calling IslandImageURL, I thought everything was gucci, but then Virgil said,
+> "Oh my sweet boy. You're not suicidal enough yet."
+
+Then thus we enter
+## Tags and What Went Wrong (again)
+The spirit of the Appalachian Trail, I overhauled the database again, adding `dbo.Tags` table so that *Islands* is at least at **2nd Normalization**. And I also added a table junction to establish a `Many-to-Many` relationship from `dbo.Islands` -> `dbo.Tags`. I did all the correct steps and made sure the relationships were all good. Skipping to what went wrong:
+
+- After scaffolding, make sure to double check the `Models` if each and every relation is functioning properly. We can use father *ChatGPT* for that.
+- Renew the MVC Controller with Entity Framework. It doesn't fix everything but it helps.
+
+After all of the comes the most important part.
+
+## IslandController.cs
+Be very sure that the external table, in my case `Tags` is accessible through the parent table, which is `Islands`. In the view methods in `IslandController.cs`, I added
+```csharp
+public async Task<IActionResult> Index()
+{
+	var appDbContext = _context.Islands
+		.Include(i => i.IslandImage)
+		.Include(i => i.Tags); // <--- ADD THIS
+	return View(await appDbContext.ToListAsync());
+}
+```
+
+`.Include(i => i.Tags` establishes the connection in `Index()`. The connection is there at the backend but the method doesn't really realize the connection until it is included. I also added that in `Details()`.
+
+```csharp
+public async Task<IActionResult> Details(int? id)
+{
+	if (id == null)
+	{
+		return NotFound();
+	}
+	var island = await _context.Islands
+		.Include(i => i.IslandImage)
+		.Include(i => i.Tags) // Include the Tags for the island
+		.FirstOrDefaultAsync(m => m.IslandId == id);
+
+	if (island == null)
+	{
+		return NotFound();
+	}
+	return View(island);
+}
+```
+
+It's better to have *ChatGPT* establish the connection unless you know the syntax (which I don't at the moment).
+
+--- 
+# Partial View
+Make an empty `Razor` view. It should have the extension `.cshtml`. Plop in a section of the website
+```html
+ <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container-fluid">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">WebApplication3</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+```
+This is a bootstrapped Navbar. Name it `_Something`.
+
+Then call it in a page with
+```csharp
+<partial name = "_Something" />
+```
+
+This will general the partial class.
