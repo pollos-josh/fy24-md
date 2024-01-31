@@ -11,4 +11,4 @@ Create a Bureau of Investigation Clearance using ASP .NET MVC and ASP .NET WebAP
 - Footer
 - Index Page
 - Upload Images directly to Azure Blob
-- 
+
