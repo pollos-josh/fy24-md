@@ -1,6 +1,5 @@
 [[Bootcamp Notes]]
 ---
-
 # Live Regex Search
 ```html
 @section scripts {
