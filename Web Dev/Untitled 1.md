@@ -6,6 +6,7 @@ Contributions:
     - Search RegEx Functionality
     - Filter Functionality
     - Modified and Fixed CRUD pages
+    - General Bugfixes
     - 
   - Ramos, Kimberly Kate
     -
