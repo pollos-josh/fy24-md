@@ -3,7 +3,7 @@
 
 # Basic ADO.NET Syntax
 
-## Establishing a connection
+## Establishing a Connection
 
 ```csharp
 using System.Data.SqlClientl
@@ -19,12 +19,15 @@ using (SqlConnection connection = new SqlConnection("LocalSqlConnection")) {
 	//sql
 }
 ```
+
 *this whole code block just establishes a connection with the database in `appsettings.json`*
 
 In Azure, find connection string settings, get the `ADO connection string` add it in `appsettings.json`.
+
 use `AzureSqlConnection` as a variable to hold the string.
 
-## while (reader.Read());
+## While (reader.Read());
+
 A construct loop to iterate through rows returned by SQL. `ExecuteReader()` returns an object called `SqlDataReader` and `while(reader.Read())` allows you to sequentially read the rows returned.
 
 As long as there are rows, `while(reader.Read())` will iterate through the rows.
@@ -40,10 +43,10 @@ while (reader.Read()){
 }
 ```
 
-
-
 ## Working with Params
+
 We're going to pass variables then bind them to the query.
+
 ```csharp
 string connectionString = "connection string";
 
@@ -63,7 +66,9 @@ using (SqlConnection connection = new SqlConnection(connectionString)) { // esta
 ```
 
 ## Executing Queries
+
 For commands that don't return data e.g. `INSERT`, `UPDATE`, `DELETE`
+
 ```csharp
 string query = 'INSERT INTO table_name (Col1, Col2) VALUES (val1, val2)';
 SqlCommand command = new SqlCommand(query, connection);
@@ -77,6 +82,7 @@ connection.Close();
 ```
 
 For commands that return data `SELECT`
+
 ```csharp
 string query = "SELECT Col1, Col2 FROM TableName";
 SqlCommand command = new SqlCommand(query, connection);
@@ -135,6 +141,7 @@ using (SqlConnection connection = new SqlConnection("LocalSqlConnection")) {
 ```
 
 This one is a sample snippet to establish a connection with a database. It also declares an `int customerID = 1` then passes it as a param with
+
 ```csharp
 SqlParameter customerIDParameter = new SqlParameter();
 customerIDParameter.ParameterName = "@CustomerID";

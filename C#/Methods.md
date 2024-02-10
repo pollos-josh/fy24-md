@@ -1,5 +1,7 @@
+# Methods
 [[Classes]]
 ---
+
 C# Functions containing a series of statements or code to perform.
 
 ```csharp
@@ -56,12 +58,16 @@ namespace MyNamespace
     }
 }
 ```  
+
 *Calling methods in other classes.*
+
 *Initialize class in Main() then declare constructor. Then call method.*
 
 *Call method from other namespace.
+
 Full syntax is MyNamespace.MyClass.MyMethod()*
-## Methods are declared by:
+
+## Methods Are Declared By:
 - Methods can be *public* or *private*.
 - Optional modifiers include: *abstract* or *sealed*.
 - The *return* value.
@@ -69,7 +75,9 @@ Full syntax is MyNamespace.MyClass.MyMethod()*
 - Any method parameters.
 
 ## Parameters
+
 Method parameters are enclosed in parenthesis. Empty parenthesis mean that the method doesn't require params.
+
 ```csharp
 public void Main(){
 	//code
@@ -80,7 +88,9 @@ public void SampleMethod(int parameter, string param2){
 ```
 
 ## Arguments
+
 When calling methods that require parameters, we must provide arguments to satisfy it.
+
 ```csharp
 public void Main(){
 	SampleMethod(1000, "hello");
@@ -92,7 +102,9 @@ public void SampleMethod(int param1, string param2){
 ```
 
 ## Method Overloading
+
 Different implementations of one method within a class.
+
 ```csharp
 class MainClass {
     public void Method() {
@@ -108,9 +120,11 @@ class MainClass {
     }
 }
 ```
+
 *note: $ enables easy concatenating of strings and variables, with variables in {curly braces}*👍 
 
 *note note: it is also wise to add summary/documentation to overloaded methods to prevent sphagetti*
+
 ```csharp
 class MainClass {
 	public void Method() {
@@ -137,6 +151,7 @@ class MainClass {
 ```
 
 ## Comments
+
 This applies to the entirety of coding but in C#, pressing `///` will automatically add an XML summary function.
 
 ```csharp
@@ -149,7 +164,9 @@ This applies to the entirety of coding but in C#, pressing `///` will automatica
 ```
 
 ## Pass By Reference
+
 Enables function members, methods, properties, indexers, operators, and constructors to change the value of params and have that change persist in a calling environment.
+
 ```csharp
 class SampleClass {
 	public void Main(ref int parameter){
@@ -157,6 +174,7 @@ class SampleClass {
 	}
 }
 ```
+
 *Useful if you want to keep the changes a variable goes through with each method.*
 
 ```csharp
@@ -173,7 +191,9 @@ public void Main() {
 ```
 
 ## Return
+
 Returns value to caller.
+
 ```csharp
 class SampleClass {
 	public int SampleMethod() {

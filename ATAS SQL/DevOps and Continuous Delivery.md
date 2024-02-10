@@ -26,4 +26,5 @@
 7. Enable incremental delivery
 
 # Continuous Integration
+
 Compile > Source Code Analysis > Run Unit Tests > Compile > ..

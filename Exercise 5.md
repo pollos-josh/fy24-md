@@ -2,6 +2,7 @@
 ---
 
 Reverse an int without leading zeros. 
+
 *Failed this one*
 
 ```csharp
@@ -109,13 +110,14 @@ namespace Exercise_5
 }
 ```
 
-
-# What went wrong...? 
+# What Went wrong…?
 
 I originally pushed this as a class library. This is wrong.
+
 Make a class `Program` with `public void Main()` then call the `Solution` class.
 
 There is also something wrong with the logic here
+
 ```csharp
  public class Solution
 {
@@ -155,6 +157,7 @@ There is also something wrong with the logic here
 ```
 
 Maybe there's something wrong with `GetValidIntegerInput()`. I modified it a bit for this project.
+
 ```csharp
 static int GetValidIntegerInput(int prompt)
 {
@@ -182,8 +185,10 @@ static int GetValidIntegerInput(int prompt)
 ```
 
 ---
-# Fixed code
+# Fixed Code
+
 Turns out, there were duplicated `Console.ReadLine()` and `WriteLine()` methods that were messing with the loop input. The main issue was with `Main` passing on the wrong variables and `GetValidIntegerInput` having `int prompt`.
+
 ```csharp
 class Program
 {
@@ -211,6 +216,7 @@ static int GetValidIntegerInput(int prompt) <---
 `GetValidIntegerInput` is supposed to get `string prompt` from `Main`. It's supposed to print a string to prompt the user to input a variable. This got broken in transitioning from a *ConsoleApp* to a *ClassLibrary*.
 
 Also, the loop algorithm is also broken. I couldn't have thought about this.
+
 ```csharp
 for (int i = 0; i < digits.Length; i++) // initialize pointer to first digit
 {
@@ -231,6 +237,7 @@ for (int i = 0; i < digits.Length; i++) // initialize pointer to first digit
 ```
 
 There is also no need to have a nested `for` loop. Here is the corrected loop
+
 ```csharp
 for (int j = digits.Length - 1; j >= 0; j--) // initialize pointer to last digit
 {
@@ -247,12 +254,14 @@ for (int j = digits.Length - 1; j >= 0; j--) // initialize pointer to last digit
 ```
 
 Finally, parsing an `int` from a `string` can lead to unexpected results, leading to duplicated `array` elements e.g.
-```
+
+```csharp
 N = 250
 result = 55
 ```
 
 It's better to construct the integer directly like:
+
 ```csharp
 int finalResults = 0;
 for (int i = 0; i < resultIndex; i++)
@@ -262,7 +271,7 @@ for (int i = 0; i < resultIndex; i++)
 return finalResults;
 ```
 
-## Here is the corrected code:
+## Here is the Corrected Code:
 
 ```csharp
 using System;

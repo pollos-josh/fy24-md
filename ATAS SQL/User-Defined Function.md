@@ -1,5 +1,9 @@
+# User-Defined Function
+
 [[Stored Procedure]]
+
 [[Bootcamp Notes]]
+
 [[MySQL Day Two]]
 
 ---
@@ -16,6 +20,7 @@ END;
 ```
 
 ## Scalar UDF Example
+
 ```sql
 CREATE FUNCTION udfDiscountedProduct (
 	@Price MONEY
@@ -25,10 +30,13 @@ BEGIN
 	RETURN @Price * .5
 END;
 ```
+
 *Can be performed within queries*
+
 *Can perform math operations*
 
 ## Table-Valued UDF Example
+
 ```sql
 CREATE FUNCTION udfProductTable(@MinPrice MONEY, @MaxPrice MONEY)
 RETURNS TABLE
@@ -39,4 +47,3 @@ AS
 ```sql
 SELECT * FROM udfProductTable(5, 100)
 ```
-

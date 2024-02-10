@@ -30,6 +30,6 @@
 ## Characteristics
 - On-Demand Self-Service
 - Resource Pooling - serving multiple users
-- Broad network access - homogenous capabilities
+- Broad network access - homogeneous capabilities
 - Rapid Elasticity - able to scale quickly
 - Measured Service - able to control and optimize resources

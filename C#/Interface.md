@@ -1,6 +1,7 @@
 [[OOP]]
 ---
 # Interface
+
 Represents a contract. It contains definitions for a group of related functionalities that a `class` or `struct` can implement.
 
 It is a `custom type reference`.
@@ -18,6 +19,7 @@ class SampleClass : ISampleInterface {
 	}
 }
 ```
+
 ## Interface Properties
 - must implement all its members,
 - cannot be instantiated directly

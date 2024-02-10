@@ -1,7 +1,9 @@
 [[Classes]]
 ---
 # Nested Types
+
 Defined as class within a class.
+
 ```csharp
 class SampleClass
 {
@@ -13,6 +15,7 @@ class SampleClass
 ```
 
 Create an instance with
+
 ```csharp
 SampleClass.NestedClass nestedClass = new SampleClass.NestedClass();
 ```

@@ -1,7 +1,9 @@
+# Exercise 2
 [[Bootcamp Notes]]
 ---
 
 ## Inverted Isosceles Triangle
+
 ```csharp
 using System;
 
@@ -56,6 +58,7 @@ namespace Exercise_2
 ```
 
 ## Inverted Triangle Snippet
+
 ```csharp
 static void displaytriangle(int height) {
 	for (int i = 1; i <= height; i++)

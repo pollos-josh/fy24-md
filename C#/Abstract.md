@@ -2,6 +2,7 @@
 ---
 
 # Abstract
+
 **Definition:** An abstract class is a class that cannot be instantiated on its own and may contain abstract methods (methods without implementation) as well as concrete methods (methods with implementation).
 
 ```csharp
@@ -62,6 +63,5 @@ class Program
 - `Circle` and `Square` are concrete classes that inherit from `Shape` and provide their own implementations of the `CalculateArea()` method based on their specific shapes.
     
 - In the `Main()` method, instances of `Circle` and `Square` are created and their `PrintArea()` methods are called, demonstrating the usage of the abstract class and its concrete implementations.
-    
 
 This setup allows for a shared structure among different shapes while allowing each shape to provide its specific implementation of the area calculation method.

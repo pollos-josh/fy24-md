@@ -3,6 +3,7 @@
 # Static
 
 Members of the class shared by all instances of a class.
+
 ```c#
 static class SampleClass
 {
@@ -11,6 +12,7 @@ static class SampleClass
 ```
 
 To access the static member, use name of the class
+
 ```c#
 Console.WriteLine(SampleClass.SampleField);
 ```
@@ -18,6 +20,7 @@ Console.WriteLine(SampleClass.SampleField);
 Static classes has static members only and cannot be instantiated. Also can't access non-static members.
 
 Static members can't be called by the instantiated variable. You must use its *ClassName*. Same with *const* variables.
+
 ```csharp
 class Program {
 	public static void Main(string[] args) {

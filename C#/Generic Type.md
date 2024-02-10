@@ -1,7 +1,9 @@
 [[OOP]]
 ---
 # Generics
+
 Defines `methods`, `classes`, and `interfaces` with the placeholder. It allows `type` to be a param to `methods`, etc.
+
 The specification of one or more types are deferred until the method is declared and instantiated.
 
 ```csharp
@@ -72,6 +74,7 @@ public class GenericStack<T>
 
 ---
 # Generic Collections
+
 ```csharp
 //List<T>
 List<int> intList = new intList<int>();

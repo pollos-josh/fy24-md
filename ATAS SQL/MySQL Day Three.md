@@ -3,14 +3,18 @@
 ---
 
 # Server Profiler
+
 Microsoft tool to analyze and monitor activities and performance tuning of SQL Server databases.
 
 # CRUD
-C - Create New Record
-R - Read / Retrieve / Query
-U - Update / Edit
-D - Delete
 
+C - Create New Record
+
+R - Read / Retrieve / Query
+
+U - Update / Edit
+
+D - Delete
 
 ## Practice
 1. Write a SQL statement using INNER JOIN to know which salesman are working for which customer.
@@ -23,6 +27,7 @@ CREATE TABLE [dbo].[Customer] (
 	SalesPersonID INT NOT NULL
 )
 ```
+
 *create customer table with sales person id*
 
 ```sql
@@ -33,12 +38,14 @@ CREATE TABLE [dbo].[SalesPerson] (
 	SalesYTD MONEY
 )
 ```
+
 *create sales person table*
 
 ```sql
 ALTER TABLE [dbo].[Customer]
 ADD CONSTRAINT sales_relation [SalesPersonID] FOREIGN KEY REFERENCES [dbo].[SalesPerson](SalesPersonID)
 ```
+
 *bridge customer and sales person table*
 
 ```sql
@@ -59,12 +66,13 @@ Carla Adams|AW00000305|David Campbell
 Amy Alberts|AW00000287|Michael Blythe
 
 ---
-2. Write a SQL statement without using JOIN to prepare a list with salesman name, customer name and their TerritoryID for the salesmen and customer who belongs to the same TerritoryID.
+1. Write a SQL statement without using JOIN to prepare a list with salesman name, customer name and their TerritoryID for the salesmen and customer who belongs to the same TerritoryID.
 
 ```sql
 ALTER TABLE [dbo].[Customer] ADD [TerritoryID]
 ALTER TABLE [dbo].[SalesPerson] ADD [TerritoryID]
 ```
+
 *add new TerritoryID column*
 
 ```sql

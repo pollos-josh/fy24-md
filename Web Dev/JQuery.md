@@ -2,12 +2,15 @@
 ---
 
 # Getting Started
+
 Remember to include the jQuery library
 
 ```html
 <script type = "text/javascript" src = "jquery-latest.js"></script>
 ```
+
 # Ready Events
+
 ```javascript
 $(document).ready(function() {
 	// code
@@ -24,7 +27,7 @@ $(document).ready(function() {
 })
 ```
 
-```
+```csharp
             <p><strong>Region:</strong> Atlantic Ocean</p>
             <p><strong>Location:</strong> Azores, Portugal</p>
             <p><strong>Development:</strong> Adventure Hub</p>

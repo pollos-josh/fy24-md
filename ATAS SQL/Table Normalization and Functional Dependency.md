@@ -3,6 +3,7 @@
 ---
 # Table Normalization
 ## Unnormalized Table
+
 Known as flat or *denormalized* table. Contains redundant data, and has not been normalized according to the principles of normalization.
 
 ## Normalization

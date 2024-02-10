@@ -1,7 +1,9 @@
+# Stored Procedure
 [[MySQL Day Two]]
 ---
 
 Contains one or more SQL statements. It can also take input statements and return output parameters.
+
 ```sql
 CREATE PROCEDURE procedure_name
 AS
@@ -10,11 +12,13 @@ GO;
 ```
 
 Execute code with
+
 ```sql
 EXEC procedure_name [params]; -- or EXECUTE
 ```
 
 Adding parameters
+
 ```sql
 ALTER PROCEDURE dbo.spProductInsert
 @Name nchar(20),
@@ -28,8 +32,11 @@ AS
 
 EXEC spProductInsert @Name=2, @Price=13
 ```
+
 *Basically an SQL function*.
 
 ---
+
 [[Programmability]]
+
 [[User-Defined Function]]

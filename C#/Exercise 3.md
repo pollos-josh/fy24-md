@@ -1,8 +1,11 @@
+# Exercise 3
 [[Bootcamp Notes]]
 ---
 
 ## Inverted Equilateral Triangle
+
 This is just a simple console program.
+
 ```csharp
 using System;
 
@@ -65,9 +68,10 @@ namespace Exercise_3
 }
 ```
 
-
 ## Trick
+
 The trick here is the `do-while` validation for `GetValidInteger()` method.
+
 ```csharp
         // Function to validate and parse integer input
         static int GetValidIntegerInput(string prompt)
@@ -95,9 +99,13 @@ The trick here is the `do-while` validation for `GetValidInteger()` method.
             return result;
         }
 ```
+
 ## Inverted Triangle Snippet
+
 Neat little function. Takes the `height` of the triangle and prints leading spaces using it.
+
 This makes the whole equilateral thing.
+
 ```csharp
  static void DisplayTriangle(int height)
         {

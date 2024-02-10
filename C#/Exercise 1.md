@@ -1,7 +1,9 @@
+# Exercise 1
 [[Bootcamp Notes]]
 ---
 
 ## Trapezoid
+
 ```csharp
 using System;
 

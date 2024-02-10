@@ -2,10 +2,13 @@
 ---
 # VS .NET
 ## .NET Core
+
 Cross platform open-source dev environment for building different types of applications.
+
 Allows for building on Windows, Linux, and MacOS.
 
 ## .NET Framework
+
 Only for Windows applications.
 
 ## Common Language Runtime
@@ -15,9 +18,11 @@ Only for Windows applications.
 	.NET 8
 		CLR
 ### Managed Code
+
 Refers to code that benefits from runtime services and management provided by CLR.
 
 ### Unmanaged Code
+
 Refers to code that is not executed and managed by CLR. Typically consists of languages that do not target CLR or code that is directly executed by the OS.
 
 ----
@@ -45,10 +50,10 @@ Refers to code that is not executed and managed by CLR. Typically consists of la
 - `value types` throw errors if value if NULL.
 - `reference types` do not throw errors if NULL.
 
-
 ## Custom Types
 - User defined data types.
 ## [[Classes]]
+
 ```csharp
 class SampleClass {
 	//class members go here
@@ -73,14 +78,17 @@ float num = 123.40f
 ```
 
 ## Implicit Data
+
 ```csharp
 var implicitly1 = 100;
 var implicitly2 = "abc";
 var implicitly3 = true;
 ```
+
 *soft initialized variable. must be initialized*
 
 ## Nullable Type
+
 Can accept null values
 
 ```csharp
@@ -89,6 +97,7 @@ bool? = null;
 ```
 
 ## Namespaces
+
 ```csharp
 System.Console.WriteLine("HELLO WORLD!");
 using System;
@@ -133,7 +142,9 @@ namespace MyNamespace {
 ```
 
 ## Structures
+
 suitable for representing values with small mem. requirements.
+
 ```csharp
 namespace Demo {
 	class Program {

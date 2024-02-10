@@ -1,9 +1,11 @@
 [[ADO .NET]]
 ---
-##### might have to pray to [[God]] for this one.
+##### Might Have to Pray to [[God]] for This One.
 
 # Lambda Expressions
+
 `=>` allows attaching anonymous methods that can contain expressions and statements.
+
 ```csharp
 MyDelegate myDelegate = new MyDelegate(
 	(int parameter1, int parameter2) => // lambda expression
@@ -13,23 +15,23 @@ MyDelegate myDelegate = new MyDelegate(
  ```
 
 ## Advantages
+
 *from GPT*
 
 > 1. **Conciseness and Readability:** Lambdas are concise, allowing you to define functions in a compact and readable way. This brevity makes code more expressive and easier to understand, especially for short and simple operations.
-    
->2. **Inline Usage:** Lambdas are handy when you need to pass small pieces of functionality as arguments to methods. Instead of defining a separate method or anonymous method, lambdas allow you to create the function inline, right where it's needed.
-    
->3. **Ease of Use with LINQ and Functional Programming:** Lambdas work seamlessly with LINQ queries and functional programming paradigms. They enable the use of higher-order functions like `Where`, `Select`, `OrderBy`, and others, making code more declarative and functional.
-    
->4. **Avoiding Named Method Overload:** For one-time or limited-use functions, using a lambda eliminates the need to create separate named methods. This prevents method overload and cluttering the codebase with functions that might have a single or limited use.
-    
->5. **Closure and Capturing Variables:** Lambdas can capture variables from their enclosing scope, making it easy to work with variables in the context they are created. This feature, called closure, allows lambdas to use variables from the surrounding code without passing them explicitly.
-    
->6. **Functional Composition:** Lambdas facilitate functional composition, enabling the creation of complex operations by combining simpler functions. This encourages a more modular and compositional approach to coding.
-
-
+> 
+> 2. **Inline Usage:** Lambdas are handy when you need to pass small pieces of functionality as arguments to methods. Instead of defining a separate method or anonymous method, lambdas allow you to create the function inline, right where it's needed.
+> 
+> 3. **Ease of Use with LINQ and Functional Programming:** Lambdas work seamlessly with LINQ queries and functional programming paradigms. They enable the use of higher-order functions like `Where`, `Select`, `OrderBy`, and others, making code more declarative and functional.
+> 
+> 4. **Avoiding Named Method Overload:** For one-time or limited-use functions, using a lambda eliminates the need to create separate named methods. This prevents method overload and cluttering the codebase with functions that might have a single or limited use.
+> 
+> 5. **Closure and Capturing Variables:** Lambdas can capture variables from their enclosing scope, making it easy to work with variables in the context they are created. This feature, called closure, allows lambdas to use variables from the surrounding code without passing them explicitly.
+> 
+> 6. **Functional Composition:** Lambdas facilitate functional composition, enabling the creation of complex operations by combining simpler functions. This encourages a more modular and compositional approach to coding.
 
 ## LINQ
+
 Language Integrated Queries are higher level statements enabling SQL-like syntax 
 
 ```csharp
@@ -58,6 +60,7 @@ static void Main(string[] args) {
 ```
 
 ### Sample LINQ Statements
+
 ```csharp
  //sample LINQ statements
 var olderThan25 = people.Where(person => person.Age > 25);
@@ -71,11 +74,13 @@ var namesOfOlderThan25Sorted = people
 ```
 
 A more direct syntax to call LINQ operator methods, and passing lambda expressions as parameters
+
 ```csharp
 IQueryable<Customer> custQuery = dbCustomers.Where(Cust => cust.City == 'Manila').Select(cust => cust);
 ```
 
 **Customer list**
+
 ```csharp
 private static IEnumerable<Customer> customers = new List<Customer>
 {
@@ -88,17 +93,18 @@ private static IEnumerable<Customer> customers = new List<Customer>
 
 ```
 
-
 ## LINQ and SQL
 
 ```csharp
 var customerLastNames = customers.Select(customer => customer.LastName); 
 ```
+
 *This pushes `customer.LastName` from `IEnumerable<Customer> customers` using `Select`.*
 
  It's easier to think about this as a longer SQL statement. Notice that `SELECT CustomerName FROM Customers` is similar to the first code block, just rearranged. 
 
 Another implementation is:
+
  ```csharp
 var selectedCustomers = customer.Select(customer => customer);
 
@@ -106,10 +112,13 @@ foreach (Customer selectedCustomer in selectedCustomers) {
 	Console.WriteLine("Customer Name: {0} {1}", selectedCustomer.FirstName, selectedCustomer.LastName);
 }
 ```
+
 *Return the whole `customer` object with `FirstName` and `LastName`.*
 
 ### Headtrauma and Nosebleed
+
 We can start going crazy from here with `Where`. Similar to `WHERE` in SQL, it's an additional condition statement for filtering.
+
 ```csharp
 static void Main(string[] args) {
 	var selectedCustomers =
@@ -126,9 +135,10 @@ static void Main(string[] args) {
 }
 ```
 
-
 ## LINQ Aggregators
+
 Similar to SQL syntax, LINQ also has aggregators `Distinct`, `Count`
+
 ```csharp
 static void Main(string[] args) {
 	int[] numbers = { 2, 2, 3, 4, 5, 5, 6, 6, 7, 7 }
@@ -146,6 +156,7 @@ static void Main(string[] args) {
 ```
 
 Other aggregators like `Sum`, `Min`, `Max`, and `Average` are hardcoded into C#.
+
 ```csharp
 int minimum = numbers.Min();
 int maximum = numbers.Max();

@@ -4,6 +4,7 @@
 # Parallelogram
 
 Trying to think through an algorithm for the parallelogram.
+
 The sample output is more of a rhombus, with equal length (in `*`) in all sides.
 
 The user is only allowed to give an input for the base, so using that, we can calculate how many spaces we need to print before the asterisks.
@@ -21,4 +22,4 @@ for (int i = base - 1; i >=0; i--) { // this one wraps the whole loop.
 }
 ```
 
-# WORKING!! FIRST TRY 
+# WORKING!! FIRST TRY

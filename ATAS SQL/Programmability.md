@@ -1,17 +1,22 @@
 [[MySQL Day Two]]
 [[Stored Procedure]]
 ---
-# Begin... End
+# Begin… End
+
 Code blocks
+
 ```sql
 BEGIN
 -- code
 END
 ```
 
-# IF... ELSE
+# IF… ELSE
+
 Basically normal *if else* functionality
+
 ## Variable
+
 ```sql
 DECLARE @Variable INT = 10;
 IF @Variable > 5
@@ -24,8 +29,10 @@ ELSE
 	END
 ```
 
-# TRY... CATCH
+# TRY… CATCH
+
 *Used* for error handling and exception management.
+
 ```sql
 CREATE PROCEDURE name
 AS

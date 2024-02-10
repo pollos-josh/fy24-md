@@ -3,7 +3,9 @@
  - [ ] TODO: Check if reviewed.
 # Object Composition
 ## Association
+
 Relationship of data. Think of how database schemas function.
+
 ```csharp
 // Student class
 public class Student
@@ -43,6 +45,7 @@ public class Enrollment
  ```
 
 The above code establishes various data in `Student`, `Course`, and `Enrollment`. Following this, we establish relationships
+
 ```csharp
 Student student1 = new Student { StudentId = 1, Name = "John Doe" };
 Course course1 = new Course { CourseId = 101, Title = "Computer Science" };
@@ -55,6 +58,7 @@ Console.WriteLine($"Student: {enrollment1.Student.Name}, Course: {enrollment1.Co
  ```
 
 ## Aggregation
+
 A specialized version of `Association` where all objects have their own lifecycle but there is ownership. The child object cannot belong to another parent object.
 
 ```csharp
@@ -81,6 +85,7 @@ public class Professor {
  Here, the relationship between University and Departments, and between Departments and Professors, demonstrates aggregation. Departments exist independently and can exist without the University. Professors are associated with Departments but can exist outside a specific department or even the university.
 
 ## Composition
+
 A specialized version of `Aggregation` where child objects do not have lifecycles without parent objects. If parent objects are deleted, child objects are also deleted.
 
 ```csharp

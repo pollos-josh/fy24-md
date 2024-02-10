@@ -1,6 +1,7 @@
 [[Classes]]
 ---
 # Enumeration
+
 An efficient way to set integral constants assigned to a variable.
 
 ```csharp

@@ -2,7 +2,9 @@
 ---
 # C# Solutions and Syntax
 ## Two Sum
+
 First solution I tried is a typical `for` loop.
+
 ```csharp
 public class Solution {
     public int[] TwoSum(int[] nums, int target) {
@@ -20,11 +22,12 @@ public class Solution {
 }
 ```
 
-
 But looking for a more efficient algorithm in `O(n)` linear time, hash maps are still required.
+
 *ref: [[two sum python]]*
 
 `Dictionary` syntax
+
 ```csharp
 Dictionary <datatype, datatype> dictName = new Dictionary<datatype, datatype>();
 
@@ -33,6 +36,7 @@ dictName.ContainsKey(arg); // check if arg is in hashmap
 ```
 
 **doesn't work**
+
 ```csharp
 public class Solution {
     public int[] TwoSum(int[] nums, int target) {
@@ -55,6 +59,7 @@ public class Solution {
 ```
 
 ## Valid Anagram
+
 Anagram checks involve some kind of array sorting. Push both sorted strings into arrays then compare them.
 
 | a   | n   | a   | g   | r   | a   | m   |
@@ -80,6 +85,7 @@ for (int i = 0; i < sArray.Length; i++) {
 ```
 
 ## Group Anagrams
+
 Looking at my previous solution in python (ref: [[group anagrams]]), the most efficient solution is a `hashMap` then a `for` loop to group them together.
 
 ```csharp
@@ -101,6 +107,7 @@ public class Solution {
 ```
 
 Corrected code:
+
 ```csharp
 public class Solution {
     public IList<IList<string>> GroupAnagrams(string[] strs) {
@@ -123,6 +130,7 @@ public class Solution {
 ```
 
 However, a more modern approach is by using `dictionary`:
+
 ```csharp
 public class Solution {
 	public IList<IList<string>> GroupAnagrams(string[] strs) {

@@ -6,6 +6,7 @@
 - Ensuring if program is fit for end-users.
 
 *V-Model* - Testing is undertaken in discrete phases.
+
 *Agile* - Iterative and continuous.
 
 # Things to Consider
@@ -63,4 +64,5 @@
 	- Is it root defect or symptom?
 
 # Test Plan
+
 ![[Pasted image 20231213082916.png]]
