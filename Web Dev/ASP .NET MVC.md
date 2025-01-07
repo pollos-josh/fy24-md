@@ -101,14 +101,6 @@ This generates all the code you need and hopefully, all the spaghetti has been s
 
 # Many-to-Many Relationships
 
-## The Second Circle of Hell
-
-After being successful in calling IslandImageURL, I thought everything was gucci, but then Virgil said,
-
-> "Oh my sweet boy. You're not suicidal enough yet."
-
-Then thus we enter
-
 ## Tags and What Went Wrong (again)
 
 The spirit of the Appalachian Trail, I overhauled the database again, adding `dbo.Tags` table so that *Islands* is at least at **2nd Normalization**. And I also added a table junction to establish a `Many-to-Many` relationship from `dbo.Islands` -> `dbo.Tags`. I did all the correct steps and made sure the relationships were all good. Skipping to what went wrong:
