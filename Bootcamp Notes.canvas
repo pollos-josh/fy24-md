@@ -1,830 +1,112 @@
 {
-  "nodes": [
-    {
-      "id": "fy24-remote/Bootcamp Notes.md",
-      "type": "file",
-      "file": "fy24-remote/Bootcamp Notes.md",
-      "isStartNode": false,
-      "x": 0,
-      "y": 8700,
-      "width": 500,
-      "height": 500,
-      "color": "1"
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/Intro to Project Management.md",
-      "type": "file",
-      "file": "fy24-remote/ATAS SQL/Intro to Project Management.md",
-      "x": 1000,
-      "y": 0,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/Testing.md",
-      "type": "file",
-      "file": "fy24-remote/ATAS SQL/Testing.md",
-      "x": 1000,
-      "y": 600,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/attachments/Pasted image 20231213082916.png",
-      "type": "file",
-      "file": "fy24-remote/attachments/Pasted image 20231213082916.png",
-      "x": 2000,
-      "y": 600,
-      "width": 500,
-      "height": 216
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/Intro to Infra.md",
-      "type": "file",
-      "file": "fy24-remote/ATAS SQL/Intro to Infra.md",
-      "x": 1000,
-      "y": 1200,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/Intro to Environments.md",
-      "type": "file",
-      "file": "fy24-remote/ATAS SQL/Intro to Environments.md",
-      "x": 1000,
-      "y": 1800,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/DevOps and Continuous Delivery.md",
-      "type": "file",
-      "file": "fy24-remote/ATAS SQL/DevOps and Continuous Delivery.md",
-      "x": 1000,
-      "y": 2400,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/MySQL Day One.md",
-      "type": "file",
-      "file": "fy24-remote/ATAS SQL/MySQL Day One.md",
-      "x": 1000,
-      "y": 3600,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/Table Normalization and Functional Dependency.md",
-      "type": "file",
-      "file": "fy24-remote/ATAS SQL/Table Normalization and Functional Dependency.md",
-      "x": 2000,
-      "y": 3000,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/MySQL Day Two.md",
-      "type": "file",
-      "file": "fy24-remote/ATAS SQL/MySQL Day Two.md",
-      "x": 1000,
-      "y": 5400,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/attachments/Pasted image 20231212143341.png",
-      "type": "file",
-      "file": "fy24-remote/attachments/Pasted image 20231212143341.png",
-      "x": 2000,
-      "y": 4200,
-      "width": 500,
-      "height": 333
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/Programmability.md",
-      "type": "file",
-      "file": "fy24-remote/ATAS SQL/Programmability.md",
-      "x": 2000,
-      "y": 4800,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/Stored Procedure.md",
-      "type": "file",
-      "file": "fy24-remote/ATAS SQL/Stored Procedure.md",
-      "x": 2000,
-      "y": 5400,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/User-Defined Function.md",
-      "type": "file",
-      "file": "fy24-remote/ATAS SQL/User-Defined Function.md",
-      "x": 2000,
-      "y": 6000,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/C#/VS .NET.md",
-      "type": "file",
-      "file": "fy24-remote/C#/VS .NET.md",
-      "x": 1000,
-      "y": 6600,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/C#/Classes.md",
-      "type": "file",
-      "file": "fy24-remote/C#/Classes.md",
-      "x": 2000,
-      "y": 6600,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/C#/OOP.md",
-      "type": "file",
-      "file": "fy24-remote/C#/OOP.md",
-      "x": 1000,
-      "y": 8700,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/C#/Object Composition.md",
-      "type": "file",
-      "file": "fy24-remote/C#/Object Composition.md",
-      "x": 2000,
-      "y": 7200,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/C#/Interface.md",
-      "type": "file",
-      "file": "fy24-remote/C#/Interface.md",
-      "x": 2000,
-      "y": 7800,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/C#/Abstract.md",
-      "type": "file",
-      "file": "fy24-remote/C#/Abstract.md",
-      "x": 2000,
-      "y": 8400,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/C#/Generic Type.md",
-      "type": "file",
-      "file": "fy24-remote/C#/Generic Type.md",
-      "x": 2000,
-      "y": 9000,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/C#/Type Conversions.md",
-      "type": "file",
-      "file": "fy24-remote/C#/Type Conversions.md",
-      "x": 2000,
-      "y": 9600,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/C#/Null Checking.md",
-      "type": "file",
-      "file": "fy24-remote/C#/Null Checking.md",
-      "x": 2000,
-      "y": 10200,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/Unit Tests.md",
-      "type": "file",
-      "file": "fy24-remote/Unit Tests.md",
-      "x": 1000,
-      "y": 10800,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/C#/ADO .NET.md",
-      "type": "file",
-      "file": "fy24-remote/C#/ADO .NET.md",
-      "x": 1000,
-      "y": 12000,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/C#/CSharp SQL Syntax.md",
-      "type": "file",
-      "file": "fy24-remote/C#/CSharp SQL Syntax.md",
-      "x": 2000,
-      "y": 11400,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/C#/Lambda Expression.md",
-      "type": "file",
-      "file": "fy24-remote/C#/Lambda Expression.md",
-      "x": 2000,
-      "y": 12000,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/C#/ADO.NET Entity Framework.md",
-      "type": "file",
-      "file": "fy24-remote/C#/ADO.NET Entity Framework.md",
-      "x": 2000,
-      "y": 12600,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/C#/CSharp Solutions and Syntax.md",
-      "type": "file",
-      "file": "fy24-remote/C#/CSharp Solutions and Syntax.md",
-      "x": 1000,
-      "y": 13500,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "ob-md-notes-personal/leetcode/two sum python.md",
-      "type": "file",
-      "file": "ob-md-notes-personal/leetcode/two sum python.md",
-      "x": 2000,
-      "y": 13200,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "ob-md-notes-personal/leetcode/group anagrams.md",
-      "type": "file",
-      "file": "ob-md-notes-personal/leetcode/group anagrams.md",
-      "x": 2000,
-      "y": 13800,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/C#/Exercise 1.md",
-      "type": "file",
-      "file": "fy24-remote/C#/Exercise 1.md",
-      "x": 1000,
-      "y": 14400,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/C#/Exercise 2.md",
-      "type": "file",
-      "file": "fy24-remote/C#/Exercise 2.md",
-      "x": 1000,
-      "y": 15000,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/C#/Exercise 3.md",
-      "type": "file",
-      "file": "fy24-remote/C#/Exercise 3.md",
-      "x": 1000,
-      "y": 15600,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/C#/Exercise 4.md",
-      "type": "file",
-      "file": "fy24-remote/C#/Exercise 4.md",
-      "x": 1000,
-      "y": 16200,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/Exercise 5.md",
-      "type": "file",
-      "file": "fy24-remote/Exercise 5.md",
-      "x": 1000,
-      "y": 16800,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/Web Dev/JQuery.md",
-      "type": "file",
-      "file": "fy24-remote/Web Dev/JQuery.md",
-      "x": 1000,
-      "y": 17400,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/MySQL Day Three.md",
-      "type": "file",
-      "file": "fy24-remote/ATAS SQL/MySQL Day Three.md",
-      "x": -1000,
-      "y": 7200,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/C#/CSharp Trapezoid.md",
-      "type": "file",
-      "file": "fy24-remote/C#/CSharp Trapezoid.md",
-      "x": -1000,
-      "y": 7800,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/Web Dev/ASP .NET MVC.md",
-      "type": "file",
-      "file": "fy24-remote/Web Dev/ASP .NET MVC.md",
-      "x": -1000,
-      "y": 8400,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/Web Dev/Exercise 11.md",
-      "type": "file",
-      "file": "fy24-remote/Web Dev/Exercise 11.md",
-      "x": -1000,
-      "y": 9000,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/Web Dev/Final Project.md",
-      "type": "file",
-      "file": "fy24-remote/Web Dev/Final Project.md",
-      "x": -1000,
-      "y": 9600,
-      "width": 500,
-      "height": 500
-    },
-    {
-      "id": "fy24-remote/Web Dev/Live Regex Search.md",
-      "type": "file",
-      "file": "fy24-remote/Web Dev/Live Regex Search.md",
-      "x": -1000,
-      "y": 10200,
-      "width": 500,
-      "height": 500
-    }
-  ],
-  "edges": [
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/ATAS SQL/Intro to Project Management.md",
-      "fromNode": "fy24-remote/Bootcamp Notes.md",
-      "fromSide": "top",
-      "toNode": "fy24-remote/ATAS SQL/Intro to Project Management.md",
-      "toSide": "bottom"
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/Intro to Project Management.md-fy24-remote/Bootcamp Notes.md",
-      "fromNode": "fy24-remote/ATAS SQL/Intro to Project Management.md",
-      "fromSide": "bottom",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "top"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/ATAS SQL/Testing.md",
-      "fromNode": "fy24-remote/Bootcamp Notes.md",
-      "fromSide": "top",
-      "toNode": "fy24-remote/ATAS SQL/Testing.md",
-      "toSide": "bottom"
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/Testing.md-fy24-remote/Bootcamp Notes.md",
-      "fromNode": "fy24-remote/ATAS SQL/Testing.md",
-      "fromSide": "bottom",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "top"
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/Testing.md-fy24-remote/attachments/Pasted image 20231213082916.png",
-      "fromNode": "fy24-remote/ATAS SQL/Testing.md",
-      "fromSide": "right",
-      "toNode": "fy24-remote/attachments/Pasted image 20231213082916.png",
-      "toSide": "left"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/ATAS SQL/Intro to Infra.md",
-      "fromNode": "fy24-remote/Bootcamp Notes.md",
-      "fromSide": "top",
-      "toNode": "fy24-remote/ATAS SQL/Intro to Infra.md",
-      "toSide": "bottom"
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/Intro to Infra.md-fy24-remote/Bootcamp Notes.md",
-      "fromNode": "fy24-remote/ATAS SQL/Intro to Infra.md",
-      "fromSide": "bottom",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "top"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/ATAS SQL/Intro to Environments.md",
-      "fromNode": "fy24-remote/Bootcamp Notes.md",
-      "fromSide": "top",
-      "toNode": "fy24-remote/ATAS SQL/Intro to Environments.md",
-      "toSide": "bottom"
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/Intro to Environments.md-fy24-remote/Bootcamp Notes.md",
-      "fromNode": "fy24-remote/ATAS SQL/Intro to Environments.md",
-      "fromSide": "bottom",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "top"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/ATAS SQL/DevOps and Continuous Delivery.md",
-      "fromNode": "fy24-remote/Bootcamp Notes.md",
-      "fromSide": "top",
-      "toNode": "fy24-remote/ATAS SQL/DevOps and Continuous Delivery.md",
-      "toSide": "bottom"
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/DevOps and Continuous Delivery.md-fy24-remote/Bootcamp Notes.md",
-      "fromNode": "fy24-remote/ATAS SQL/DevOps and Continuous Delivery.md",
-      "fromSide": "bottom",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "top"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/ATAS SQL/MySQL Day One.md",
-      "fromNode": "fy24-remote/Bootcamp Notes.md",
-      "fromSide": "top",
-      "toNode": "fy24-remote/ATAS SQL/MySQL Day One.md",
-      "toSide": "bottom"
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/MySQL Day One.md-fy24-remote/Bootcamp Notes.md",
-      "fromNode": "fy24-remote/ATAS SQL/MySQL Day One.md",
-      "fromSide": "bottom",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "top"
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/MySQL Day One.md-fy24-remote/ATAS SQL/Table Normalization and Functional Dependency.md",
-      "fromNode": "fy24-remote/ATAS SQL/MySQL Day One.md",
-      "fromSide": "right",
-      "toNode": "fy24-remote/ATAS SQL/Table Normalization and Functional Dependency.md",
-      "toSide": "left"
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/MySQL Day One.md-fy24-remote/ATAS SQL/MySQL Day Two.md",
-      "fromNode": "fy24-remote/ATAS SQL/MySQL Day One.md",
-      "fromSide": "bottom",
-      "toNode": "fy24-remote/ATAS SQL/MySQL Day Two.md",
-      "toSide": "top"
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/MySQL Day One.md-fy24-remote/attachments/Pasted image 20231212143341.png",
-      "fromNode": "fy24-remote/ATAS SQL/MySQL Day One.md",
-      "fromSide": "right",
-      "toNode": "fy24-remote/attachments/Pasted image 20231212143341.png",
-      "toSide": "left"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/ATAS SQL/MySQL Day Two.md",
-      "fromNode": "fy24-remote/Bootcamp Notes.md",
-      "fromSide": "top",
-      "toNode": "fy24-remote/ATAS SQL/MySQL Day Two.md",
-      "toSide": "bottom"
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/MySQL Day Two.md-fy24-remote/Bootcamp Notes.md",
-      "fromNode": "fy24-remote/ATAS SQL/MySQL Day Two.md",
-      "fromSide": "bottom",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "top"
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/MySQL Day Two.md-fy24-remote/ATAS SQL/MySQL Day One.md",
-      "fromNode": "fy24-remote/ATAS SQL/MySQL Day Two.md",
-      "fromSide": "top",
-      "toNode": "fy24-remote/ATAS SQL/MySQL Day One.md",
-      "toSide": "bottom"
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/MySQL Day Two.md-fy24-remote/ATAS SQL/Programmability.md",
-      "fromNode": "fy24-remote/ATAS SQL/MySQL Day Two.md",
-      "fromSide": "right",
-      "toNode": "fy24-remote/ATAS SQL/Programmability.md",
-      "toSide": "left"
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/MySQL Day Two.md-fy24-remote/ATAS SQL/Stored Procedure.md",
-      "fromNode": "fy24-remote/ATAS SQL/MySQL Day Two.md",
-      "fromSide": "right",
-      "toNode": "fy24-remote/ATAS SQL/Stored Procedure.md",
-      "toSide": "left"
-    },
-    {
-      "id": "fy24-remote/ATAS SQL/MySQL Day Two.md-fy24-remote/ATAS SQL/User-Defined Function.md",
-      "fromNode": "fy24-remote/ATAS SQL/MySQL Day Two.md",
-      "fromSide": "right",
-      "toNode": "fy24-remote/ATAS SQL/User-Defined Function.md",
-      "toSide": "left"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/C#/VS .NET.md",
-      "fromNode": "fy24-remote/Bootcamp Notes.md",
-      "fromSide": "top",
-      "toNode": "fy24-remote/C#/VS .NET.md",
-      "toSide": "bottom"
-    },
-    {
-      "id": "fy24-remote/C#/VS .NET.md-fy24-remote/Bootcamp Notes.md",
-      "fromNode": "fy24-remote/C#/VS .NET.md",
-      "fromSide": "bottom",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "top"
-    },
-    {
-      "id": "fy24-remote/C#/VS .NET.md-fy24-remote/C#/Classes.md",
-      "fromNode": "fy24-remote/C#/VS .NET.md",
-      "fromSide": "right",
-      "toNode": "fy24-remote/C#/Classes.md",
-      "toSide": "left"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/C#/OOP.md",
-      "fromNode": "fy24-remote/Bootcamp Notes.md",
-      "fromSide": "right",
-      "toNode": "fy24-remote/C#/OOP.md",
-      "toSide": "left"
-    },
-    {
-      "id": "fy24-remote/C#/OOP.md-fy24-remote/Bootcamp Notes.md",
-      "fromNode": "fy24-remote/C#/OOP.md",
-      "fromSide": "left",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "right"
-    },
-    {
-      "id": "fy24-remote/C#/OOP.md-fy24-remote/C#/Object Composition.md",
-      "fromNode": "fy24-remote/C#/OOP.md",
-      "fromSide": "top",
-      "toNode": "fy24-remote/C#/Object Composition.md",
-      "toSide": "bottom"
-    },
-    {
-      "id": "fy24-remote/C#/OOP.md-fy24-remote/C#/Interface.md",
-      "fromNode": "fy24-remote/C#/OOP.md",
-      "fromSide": "top",
-      "toNode": "fy24-remote/C#/Interface.md",
-      "toSide": "left"
-    },
-    {
-      "id": "fy24-remote/C#/OOP.md-fy24-remote/C#/Abstract.md",
-      "fromNode": "fy24-remote/C#/OOP.md",
-      "fromSide": "right",
-      "toNode": "fy24-remote/C#/Abstract.md",
-      "toSide": "left"
-    },
-    {
-      "id": "fy24-remote/C#/OOP.md-fy24-remote/C#/Generic Type.md",
-      "fromNode": "fy24-remote/C#/OOP.md",
-      "fromSide": "right",
-      "toNode": "fy24-remote/C#/Generic Type.md",
-      "toSide": "left"
-    },
-    {
-      "id": "fy24-remote/C#/OOP.md-fy24-remote/C#/Type Conversions.md",
-      "fromNode": "fy24-remote/C#/OOP.md",
-      "fromSide": "bottom",
-      "toNode": "fy24-remote/C#/Type Conversions.md",
-      "toSide": "left"
-    },
-    {
-      "id": "fy24-remote/C#/OOP.md-fy24-remote/C#/Null Checking.md",
-      "fromNode": "fy24-remote/C#/OOP.md",
-      "fromSide": "bottom",
-      "toNode": "fy24-remote/C#/Null Checking.md",
-      "toSide": "top"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/Unit Tests.md",
-      "fromNode": "fy24-remote/Bootcamp Notes.md",
-      "fromSide": "bottom",
-      "toNode": "fy24-remote/Unit Tests.md",
-      "toSide": "top"
-    },
-    {
-      "id": "fy24-remote/Unit Tests.md-fy24-remote/Bootcamp Notes.md",
-      "fromNode": "fy24-remote/Unit Tests.md",
-      "fromSide": "top",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "bottom"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/C#/ADO .NET.md",
-      "fromNode": "fy24-remote/Bootcamp Notes.md",
-      "fromSide": "bottom",
-      "toNode": "fy24-remote/C#/ADO .NET.md",
-      "toSide": "top"
-    },
-    {
-      "id": "fy24-remote/C#/ADO .NET.md-fy24-remote/Bootcamp Notes.md",
-      "fromNode": "fy24-remote/C#/ADO .NET.md",
-      "fromSide": "top",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "bottom"
-    },
-    {
-      "id": "fy24-remote/C#/ADO .NET.md-fy24-remote/C#/CSharp SQL Syntax.md",
-      "fromNode": "fy24-remote/C#/ADO .NET.md",
-      "fromSide": "right",
-      "toNode": "fy24-remote/C#/CSharp SQL Syntax.md",
-      "toSide": "left"
-    },
-    {
-      "id": "fy24-remote/C#/ADO .NET.md-fy24-remote/C#/Lambda Expression.md",
-      "fromNode": "fy24-remote/C#/ADO .NET.md",
-      "fromSide": "right",
-      "toNode": "fy24-remote/C#/Lambda Expression.md",
-      "toSide": "left"
-    },
-    {
-      "id": "fy24-remote/C#/ADO .NET.md-fy24-remote/C#/ADO.NET Entity Framework.md",
-      "fromNode": "fy24-remote/C#/ADO .NET.md",
-      "fromSide": "right",
-      "toNode": "fy24-remote/C#/ADO.NET Entity Framework.md",
-      "toSide": "left"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/C#/CSharp Solutions and Syntax.md",
-      "fromNode": "fy24-remote/Bootcamp Notes.md",
-      "fromSide": "bottom",
-      "toNode": "fy24-remote/C#/CSharp Solutions and Syntax.md",
-      "toSide": "top"
-    },
-    {
-      "id": "fy24-remote/C#/CSharp Solutions and Syntax.md-fy24-remote/Bootcamp Notes.md",
-      "fromNode": "fy24-remote/C#/CSharp Solutions and Syntax.md",
-      "fromSide": "top",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "bottom"
-    },
-    {
-      "id": "fy24-remote/C#/CSharp Solutions and Syntax.md-ob-md-notes-personal/leetcode/two sum python.md",
-      "fromNode": "fy24-remote/C#/CSharp Solutions and Syntax.md",
-      "fromSide": "right",
-      "toNode": "ob-md-notes-personal/leetcode/two sum python.md",
-      "toSide": "left"
-    },
-    {
-      "id": "fy24-remote/C#/CSharp Solutions and Syntax.md-ob-md-notes-personal/leetcode/group anagrams.md",
-      "fromNode": "fy24-remote/C#/CSharp Solutions and Syntax.md",
-      "fromSide": "right",
-      "toNode": "ob-md-notes-personal/leetcode/group anagrams.md",
-      "toSide": "left"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/C#/Exercise 1.md",
-      "fromNode": "fy24-remote/Bootcamp Notes.md",
-      "fromSide": "bottom",
-      "toNode": "fy24-remote/C#/Exercise 1.md",
-      "toSide": "top"
-    },
-    {
-      "id": "fy24-remote/C#/Exercise 1.md-fy24-remote/Bootcamp Notes.md",
-      "fromNode": "fy24-remote/C#/Exercise 1.md",
-      "fromSide": "top",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "bottom"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/C#/Exercise 2.md",
-      "fromNode": "fy24-remote/Bootcamp Notes.md",
-      "fromSide": "bottom",
-      "toNode": "fy24-remote/C#/Exercise 2.md",
-      "toSide": "top"
-    },
-    {
-      "id": "fy24-remote/C#/Exercise 2.md-fy24-remote/Bootcamp Notes.md",
-      "fromNode": "fy24-remote/C#/Exercise 2.md",
-      "fromSide": "top",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "bottom"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/C#/Exercise 3.md",
-      "fromNode": "fy24-remote/Bootcamp Notes.md",
-      "fromSide": "bottom",
-      "toNode": "fy24-remote/C#/Exercise 3.md",
-      "toSide": "top"
-    },
-    {
-      "id": "fy24-remote/C#/Exercise 3.md-fy24-remote/Bootcamp Notes.md",
-      "fromNode": "fy24-remote/C#/Exercise 3.md",
-      "fromSide": "top",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "bottom"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/C#/Exercise 4.md",
-      "fromNode": "fy24-remote/Bootcamp Notes.md",
-      "fromSide": "bottom",
-      "toNode": "fy24-remote/C#/Exercise 4.md",
-      "toSide": "top"
-    },
-    {
-      "id": "fy24-remote/C#/Exercise 4.md-fy24-remote/Bootcamp Notes.md",
-      "fromNode": "fy24-remote/C#/Exercise 4.md",
-      "fromSide": "top",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "bottom"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/Exercise 5.md",
-      "fromNode": "fy24-remote/Bootcamp Notes.md",
-      "fromSide": "bottom",
-      "toNode": "fy24-remote/Exercise 5.md",
-      "toSide": "top"
-    },
-    {
-      "id": "fy24-remote/Exercise 5.md-fy24-remote/Bootcamp Notes.md",
-      "fromNode": "fy24-remote/Exercise 5.md",
-      "fromSide": "top",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "bottom"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/Web Dev/JQuery.md",
-      "fromNode": "fy24-remote/Bootcamp Notes.md",
-      "fromSide": "bottom",
-      "toNode": "fy24-remote/Web Dev/JQuery.md",
-      "toSide": "top"
-    },
-    {
-      "id": "fy24-remote/Web Dev/JQuery.md-fy24-remote/Bootcamp Notes.md",
-      "fromNode": "fy24-remote/Web Dev/JQuery.md",
-      "fromSide": "top",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "bottom"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/ATAS SQL/MySQL Day Three.md",
-      "fromNode": "fy24-remote/ATAS SQL/MySQL Day Three.md",
-      "fromSide": "bottom",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "top"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/C#/CSharp Trapezoid.md",
-      "fromNode": "fy24-remote/C#/CSharp Trapezoid.md",
-      "fromSide": "bottom",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "left"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/Web Dev/ASP .NET MVC.md",
-      "fromNode": "fy24-remote/Web Dev/ASP .NET MVC.md",
-      "fromSide": "right",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "left"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/Web Dev/Exercise 11.md",
-      "fromNode": "fy24-remote/Web Dev/Exercise 11.md",
-      "fromSide": "right",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "left"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/Web Dev/Final Project.md",
-      "fromNode": "fy24-remote/Web Dev/Final Project.md",
-      "fromSide": "top",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "left"
-    },
-    {
-      "id": "fy24-remote/Bootcamp Notes.md-fy24-remote/Web Dev/Live Regex Search.md",
-      "fromNode": "fy24-remote/Web Dev/Live Regex Search.md",
-      "fromSide": "top",
-      "toNode": "fy24-remote/Bootcamp Notes.md",
-      "toSide": "bottom"
-    }
-  ],
-  "metadata": {}
+	"nodes":[
+		{"id":"fy24-remote/Bootcamp Notes.md","type":"file","file":"fy24-remote/Bootcamp Notes.md","isStartNode":false,"x":0,"y":8700,"width":500,"height":500,"color":"1"},
+		{"id":"fy24-remote/ATAS SQL/Intro to Project Management.md","type":"file","file":"fy24-remote/ATAS SQL/Intro to Project Management.md","x":1000,"y":0,"width":500,"height":500},
+		{"id":"fy24-remote/ATAS SQL/Testing.md","type":"file","file":"fy24-remote/ATAS SQL/Testing.md","x":1000,"y":600,"width":500,"height":500},
+		{"id":"fy24-remote/attachments/Pasted image 20231213082916.png","type":"file","file":"fy24-remote/attachments/Pasted image 20231213082916.png","x":2000,"y":600,"width":500,"height":216},
+		{"id":"fy24-remote/ATAS SQL/Intro to Infra.md","type":"file","file":"fy24-remote/ATAS SQL/Intro to Infra.md","x":1000,"y":1200,"width":500,"height":500},
+		{"id":"fy24-remote/ATAS SQL/Intro to Environments.md","type":"file","file":"fy24-remote/ATAS SQL/Intro to Environments.md","x":1000,"y":1800,"width":500,"height":500},
+		{"id":"fy24-remote/ATAS SQL/DevOps and Continuous Delivery.md","type":"file","file":"fy24-remote/ATAS SQL/DevOps and Continuous Delivery.md","x":1000,"y":2400,"width":500,"height":500},
+		{"id":"fy24-remote/ATAS SQL/MySQL Day One.md","type":"file","file":"fy24-remote/ATAS SQL/MySQL Day One.md","x":1000,"y":3600,"width":500,"height":500},
+		{"id":"fy24-remote/ATAS SQL/Table Normalization and Functional Dependency.md","type":"file","file":"fy24-remote/ATAS SQL/Table Normalization and Functional Dependency.md","x":2000,"y":3000,"width":500,"height":500},
+		{"id":"fy24-remote/ATAS SQL/MySQL Day Two.md","type":"file","file":"fy24-remote/ATAS SQL/MySQL Day Two.md","x":1000,"y":5400,"width":500,"height":500},
+		{"id":"fy24-remote/attachments/Pasted image 20231212143341.png","type":"file","file":"fy24-remote/attachments/Pasted image 20231212143341.png","x":2000,"y":4200,"width":500,"height":333},
+		{"id":"fy24-remote/ATAS SQL/Programmability.md","type":"file","file":"fy24-remote/ATAS SQL/Programmability.md","x":2000,"y":4800,"width":500,"height":500},
+		{"id":"fy24-remote/ATAS SQL/Stored Procedure.md","type":"file","file":"fy24-remote/ATAS SQL/Stored Procedure.md","x":2000,"y":5400,"width":500,"height":500},
+		{"id":"fy24-remote/ATAS SQL/User-Defined Function.md","type":"file","file":"fy24-remote/ATAS SQL/User-Defined Function.md","x":2000,"y":6000,"width":500,"height":500},
+		{"id":"fy24-remote/C#/VS .NET.md","type":"file","file":"fy24-remote/C#/VS .NET.md","x":1000,"y":6600,"width":500,"height":500},
+		{"id":"fy24-remote/C#/Classes.md","type":"file","file":"fy24-remote/C#/Classes.md","x":2000,"y":6600,"width":500,"height":500},
+		{"id":"fy24-remote/C#/OOP.md","type":"file","file":"fy24-remote/C#/OOP.md","x":1000,"y":8700,"width":500,"height":500},
+		{"id":"fy24-remote/C#/Object Composition.md","type":"file","file":"fy24-remote/C#/Object Composition.md","x":2000,"y":7200,"width":500,"height":500},
+		{"id":"fy24-remote/C#/Interface.md","type":"file","file":"fy24-remote/C#/Interface.md","x":2000,"y":7800,"width":500,"height":500},
+		{"id":"fy24-remote/C#/Abstract.md","type":"file","file":"fy24-remote/C#/Abstract.md","x":2000,"y":8400,"width":500,"height":500},
+		{"id":"fy24-remote/C#/Generic Type.md","type":"file","file":"fy24-remote/C#/Generic Type.md","x":2000,"y":9000,"width":500,"height":500},
+		{"id":"fy24-remote/C#/Type Conversions.md","type":"file","file":"fy24-remote/C#/Type Conversions.md","x":2000,"y":9600,"width":500,"height":500},
+		{"id":"fy24-remote/C#/Null Checking.md","type":"file","file":"fy24-remote/C#/Null Checking.md","x":2000,"y":10200,"width":500,"height":500},
+		{"id":"fy24-remote/Unit Tests.md","type":"file","file":"fy24-remote/Unit Tests.md","x":1000,"y":10800,"width":500,"height":500},
+		{"id":"fy24-remote/C#/ADO .NET.md","type":"file","file":"fy24-remote/C#/ADO .NET.md","x":1000,"y":12000,"width":500,"height":500},
+		{"id":"fy24-remote/C#/CSharp SQL Syntax.md","type":"file","file":"fy24-remote/C#/CSharp SQL Syntax.md","x":2000,"y":11400,"width":500,"height":500},
+		{"id":"fy24-remote/C#/Lambda Expression.md","type":"file","file":"fy24-remote/C#/Lambda Expression.md","x":2000,"y":12000,"width":500,"height":500},
+		{"id":"fy24-remote/C#/ADO.NET Entity Framework.md","type":"file","file":"fy24-remote/C#/ADO.NET Entity Framework.md","x":2000,"y":12600,"width":500,"height":500},
+		{"id":"fy24-remote/C#/CSharp Solutions and Syntax.md","type":"file","file":"fy24-remote/C#/CSharp Solutions and Syntax.md","x":1000,"y":13500,"width":500,"height":500},
+		{"id":"ob-md-notes-personal/leetcode/two sum python.md","type":"file","file":"fy24-remote/ob-md-notes-personal/leetcode/two sum python.md","x":2000,"y":13200,"width":500,"height":500},
+		{"id":"ob-md-notes-personal/leetcode/group anagrams.md","type":"file","file":"fy24-remote/ob-md-notes-personal/leetcode/group anagrams.md","x":2000,"y":13800,"width":500,"height":500},
+		{"id":"fy24-remote/C#/Exercise 1.md","type":"file","file":"fy24-remote/C#/Exercise 1.md","x":1000,"y":14400,"width":500,"height":500},
+		{"id":"fy24-remote/C#/Exercise 2.md","type":"file","file":"fy24-remote/C#/Exercise 2.md","x":1000,"y":15000,"width":500,"height":500},
+		{"id":"fy24-remote/C#/Exercise 3.md","type":"file","file":"fy24-remote/C#/Exercise 3.md","x":1000,"y":15600,"width":500,"height":500},
+		{"id":"fy24-remote/C#/Exercise 4.md","type":"file","file":"fy24-remote/C#/Exercise 4.md","x":1000,"y":16200,"width":500,"height":500},
+		{"id":"fy24-remote/Exercise 5.md","type":"file","file":"fy24-remote/Exercise 5.md","x":1000,"y":16800,"width":500,"height":500},
+		{"id":"fy24-remote/Web Dev/JQuery.md","type":"file","file":"fy24-remote/Web Dev/JQuery.md","x":1000,"y":17400,"width":500,"height":500},
+		{"id":"fy24-remote/ATAS SQL/MySQL Day Three.md","type":"file","file":"fy24-remote/ATAS SQL/MySQL Day Three.md","x":-1000,"y":7200,"width":500,"height":500},
+		{"id":"fy24-remote/C#/CSharp Trapezoid.md","type":"file","file":"fy24-remote/C#/CSharp Trapezoid.md","x":-1000,"y":7800,"width":500,"height":500},
+		{"id":"fy24-remote/Web Dev/ASP .NET MVC.md","type":"file","file":"fy24-remote/Web Dev/ASP .NET MVC.md","x":-1000,"y":8400,"width":500,"height":500},
+		{"id":"fy24-remote/Web Dev/Exercise 11.md","type":"file","file":"fy24-remote/Web Dev/Exercise 11.md","x":-1000,"y":9000,"width":500,"height":500},
+		{"id":"fy24-remote/Web Dev/Final Project.md","type":"file","file":"fy24-remote/Web Dev/Final Project.md","x":-1000,"y":9600,"width":500,"height":500},
+		{"id":"fy24-remote/Web Dev/Live Regex Search.md","type":"file","file":"fy24-remote/Web Dev/Live Regex Search.md","x":-1000,"y":10200,"width":500,"height":500}
+	],
+	"edges":[
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/ATAS SQL/Intro to Project Management.md","fromNode":"fy24-remote/Bootcamp Notes.md","fromSide":"top","toNode":"fy24-remote/ATAS SQL/Intro to Project Management.md","toSide":"bottom"},
+		{"id":"fy24-remote/ATAS SQL/Intro to Project Management.md-fy24-remote/Bootcamp Notes.md","fromNode":"fy24-remote/ATAS SQL/Intro to Project Management.md","fromSide":"bottom","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"top"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/ATAS SQL/Testing.md","fromNode":"fy24-remote/Bootcamp Notes.md","fromSide":"top","toNode":"fy24-remote/ATAS SQL/Testing.md","toSide":"bottom"},
+		{"id":"fy24-remote/ATAS SQL/Testing.md-fy24-remote/Bootcamp Notes.md","fromNode":"fy24-remote/ATAS SQL/Testing.md","fromSide":"bottom","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"top"},
+		{"id":"fy24-remote/ATAS SQL/Testing.md-fy24-remote/attachments/Pasted image 20231213082916.png","fromNode":"fy24-remote/ATAS SQL/Testing.md","fromSide":"right","toNode":"fy24-remote/attachments/Pasted image 20231213082916.png","toSide":"left"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/ATAS SQL/Intro to Infra.md","fromNode":"fy24-remote/Bootcamp Notes.md","fromSide":"top","toNode":"fy24-remote/ATAS SQL/Intro to Infra.md","toSide":"bottom"},
+		{"id":"fy24-remote/ATAS SQL/Intro to Infra.md-fy24-remote/Bootcamp Notes.md","fromNode":"fy24-remote/ATAS SQL/Intro to Infra.md","fromSide":"bottom","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"top"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/ATAS SQL/Intro to Environments.md","fromNode":"fy24-remote/Bootcamp Notes.md","fromSide":"top","toNode":"fy24-remote/ATAS SQL/Intro to Environments.md","toSide":"bottom"},
+		{"id":"fy24-remote/ATAS SQL/Intro to Environments.md-fy24-remote/Bootcamp Notes.md","fromNode":"fy24-remote/ATAS SQL/Intro to Environments.md","fromSide":"bottom","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"top"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/ATAS SQL/DevOps and Continuous Delivery.md","fromNode":"fy24-remote/Bootcamp Notes.md","fromSide":"top","toNode":"fy24-remote/ATAS SQL/DevOps and Continuous Delivery.md","toSide":"bottom"},
+		{"id":"fy24-remote/ATAS SQL/DevOps and Continuous Delivery.md-fy24-remote/Bootcamp Notes.md","fromNode":"fy24-remote/ATAS SQL/DevOps and Continuous Delivery.md","fromSide":"bottom","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"top"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/ATAS SQL/MySQL Day One.md","fromNode":"fy24-remote/Bootcamp Notes.md","fromSide":"top","toNode":"fy24-remote/ATAS SQL/MySQL Day One.md","toSide":"bottom"},
+		{"id":"fy24-remote/ATAS SQL/MySQL Day One.md-fy24-remote/Bootcamp Notes.md","fromNode":"fy24-remote/ATAS SQL/MySQL Day One.md","fromSide":"bottom","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"top"},
+		{"id":"fy24-remote/ATAS SQL/MySQL Day One.md-fy24-remote/ATAS SQL/Table Normalization and Functional Dependency.md","fromNode":"fy24-remote/ATAS SQL/MySQL Day One.md","fromSide":"right","toNode":"fy24-remote/ATAS SQL/Table Normalization and Functional Dependency.md","toSide":"left"},
+		{"id":"fy24-remote/ATAS SQL/MySQL Day One.md-fy24-remote/ATAS SQL/MySQL Day Two.md","fromNode":"fy24-remote/ATAS SQL/MySQL Day One.md","fromSide":"bottom","toNode":"fy24-remote/ATAS SQL/MySQL Day Two.md","toSide":"top"},
+		{"id":"fy24-remote/ATAS SQL/MySQL Day One.md-fy24-remote/attachments/Pasted image 20231212143341.png","fromNode":"fy24-remote/ATAS SQL/MySQL Day One.md","fromSide":"right","toNode":"fy24-remote/attachments/Pasted image 20231212143341.png","toSide":"left"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/ATAS SQL/MySQL Day Two.md","fromNode":"fy24-remote/Bootcamp Notes.md","fromSide":"top","toNode":"fy24-remote/ATAS SQL/MySQL Day Two.md","toSide":"bottom"},
+		{"id":"fy24-remote/ATAS SQL/MySQL Day Two.md-fy24-remote/Bootcamp Notes.md","fromNode":"fy24-remote/ATAS SQL/MySQL Day Two.md","fromSide":"bottom","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"top"},
+		{"id":"fy24-remote/ATAS SQL/MySQL Day Two.md-fy24-remote/ATAS SQL/MySQL Day One.md","fromNode":"fy24-remote/ATAS SQL/MySQL Day Two.md","fromSide":"top","toNode":"fy24-remote/ATAS SQL/MySQL Day One.md","toSide":"bottom"},
+		{"id":"fy24-remote/ATAS SQL/MySQL Day Two.md-fy24-remote/ATAS SQL/Programmability.md","fromNode":"fy24-remote/ATAS SQL/MySQL Day Two.md","fromSide":"right","toNode":"fy24-remote/ATAS SQL/Programmability.md","toSide":"left"},
+		{"id":"fy24-remote/ATAS SQL/MySQL Day Two.md-fy24-remote/ATAS SQL/Stored Procedure.md","fromNode":"fy24-remote/ATAS SQL/MySQL Day Two.md","fromSide":"right","toNode":"fy24-remote/ATAS SQL/Stored Procedure.md","toSide":"left"},
+		{"id":"fy24-remote/ATAS SQL/MySQL Day Two.md-fy24-remote/ATAS SQL/User-Defined Function.md","fromNode":"fy24-remote/ATAS SQL/MySQL Day Two.md","fromSide":"right","toNode":"fy24-remote/ATAS SQL/User-Defined Function.md","toSide":"left"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/C#/VS .NET.md","fromNode":"fy24-remote/Bootcamp Notes.md","fromSide":"top","toNode":"fy24-remote/C#/VS .NET.md","toSide":"bottom"},
+		{"id":"fy24-remote/C#/VS .NET.md-fy24-remote/Bootcamp Notes.md","fromNode":"fy24-remote/C#/VS .NET.md","fromSide":"bottom","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"top"},
+		{"id":"fy24-remote/C#/VS .NET.md-fy24-remote/C#/Classes.md","fromNode":"fy24-remote/C#/VS .NET.md","fromSide":"right","toNode":"fy24-remote/C#/Classes.md","toSide":"left"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/C#/OOP.md","fromNode":"fy24-remote/Bootcamp Notes.md","fromSide":"right","toNode":"fy24-remote/C#/OOP.md","toSide":"left"},
+		{"id":"fy24-remote/C#/OOP.md-fy24-remote/Bootcamp Notes.md","fromNode":"fy24-remote/C#/OOP.md","fromSide":"left","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"right"},
+		{"id":"fy24-remote/C#/OOP.md-fy24-remote/C#/Object Composition.md","fromNode":"fy24-remote/C#/OOP.md","fromSide":"top","toNode":"fy24-remote/C#/Object Composition.md","toSide":"bottom"},
+		{"id":"fy24-remote/C#/OOP.md-fy24-remote/C#/Interface.md","fromNode":"fy24-remote/C#/OOP.md","fromSide":"top","toNode":"fy24-remote/C#/Interface.md","toSide":"left"},
+		{"id":"fy24-remote/C#/OOP.md-fy24-remote/C#/Abstract.md","fromNode":"fy24-remote/C#/OOP.md","fromSide":"right","toNode":"fy24-remote/C#/Abstract.md","toSide":"left"},
+		{"id":"fy24-remote/C#/OOP.md-fy24-remote/C#/Generic Type.md","fromNode":"fy24-remote/C#/OOP.md","fromSide":"right","toNode":"fy24-remote/C#/Generic Type.md","toSide":"left"},
+		{"id":"fy24-remote/C#/OOP.md-fy24-remote/C#/Type Conversions.md","fromNode":"fy24-remote/C#/OOP.md","fromSide":"bottom","toNode":"fy24-remote/C#/Type Conversions.md","toSide":"left"},
+		{"id":"fy24-remote/C#/OOP.md-fy24-remote/C#/Null Checking.md","fromNode":"fy24-remote/C#/OOP.md","fromSide":"bottom","toNode":"fy24-remote/C#/Null Checking.md","toSide":"top"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/Unit Tests.md","fromNode":"fy24-remote/Bootcamp Notes.md","fromSide":"bottom","toNode":"fy24-remote/Unit Tests.md","toSide":"top"},
+		{"id":"fy24-remote/Unit Tests.md-fy24-remote/Bootcamp Notes.md","fromNode":"fy24-remote/Unit Tests.md","fromSide":"top","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"bottom"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/C#/ADO .NET.md","fromNode":"fy24-remote/Bootcamp Notes.md","fromSide":"bottom","toNode":"fy24-remote/C#/ADO .NET.md","toSide":"top"},
+		{"id":"fy24-remote/C#/ADO .NET.md-fy24-remote/Bootcamp Notes.md","fromNode":"fy24-remote/C#/ADO .NET.md","fromSide":"top","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"bottom"},
+		{"id":"fy24-remote/C#/ADO .NET.md-fy24-remote/C#/CSharp SQL Syntax.md","fromNode":"fy24-remote/C#/ADO .NET.md","fromSide":"right","toNode":"fy24-remote/C#/CSharp SQL Syntax.md","toSide":"left"},
+		{"id":"fy24-remote/C#/ADO .NET.md-fy24-remote/C#/Lambda Expression.md","fromNode":"fy24-remote/C#/ADO .NET.md","fromSide":"right","toNode":"fy24-remote/C#/Lambda Expression.md","toSide":"left"},
+		{"id":"fy24-remote/C#/ADO .NET.md-fy24-remote/C#/ADO.NET Entity Framework.md","fromNode":"fy24-remote/C#/ADO .NET.md","fromSide":"right","toNode":"fy24-remote/C#/ADO.NET Entity Framework.md","toSide":"left"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/C#/CSharp Solutions and Syntax.md","fromNode":"fy24-remote/Bootcamp Notes.md","fromSide":"bottom","toNode":"fy24-remote/C#/CSharp Solutions and Syntax.md","toSide":"top"},
+		{"id":"fy24-remote/C#/CSharp Solutions and Syntax.md-fy24-remote/Bootcamp Notes.md","fromNode":"fy24-remote/C#/CSharp Solutions and Syntax.md","fromSide":"top","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"bottom"},
+		{"id":"fy24-remote/C#/CSharp Solutions and Syntax.md-ob-md-notes-personal/leetcode/two sum python.md","fromNode":"fy24-remote/C#/CSharp Solutions and Syntax.md","fromSide":"right","toNode":"ob-md-notes-personal/leetcode/two sum python.md","toSide":"left"},
+		{"id":"fy24-remote/C#/CSharp Solutions and Syntax.md-ob-md-notes-personal/leetcode/group anagrams.md","fromNode":"fy24-remote/C#/CSharp Solutions and Syntax.md","fromSide":"right","toNode":"ob-md-notes-personal/leetcode/group anagrams.md","toSide":"left"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/C#/Exercise 1.md","fromNode":"fy24-remote/Bootcamp Notes.md","fromSide":"bottom","toNode":"fy24-remote/C#/Exercise 1.md","toSide":"top"},
+		{"id":"fy24-remote/C#/Exercise 1.md-fy24-remote/Bootcamp Notes.md","fromNode":"fy24-remote/C#/Exercise 1.md","fromSide":"top","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"bottom"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/C#/Exercise 2.md","fromNode":"fy24-remote/Bootcamp Notes.md","fromSide":"bottom","toNode":"fy24-remote/C#/Exercise 2.md","toSide":"top"},
+		{"id":"fy24-remote/C#/Exercise 2.md-fy24-remote/Bootcamp Notes.md","fromNode":"fy24-remote/C#/Exercise 2.md","fromSide":"top","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"bottom"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/C#/Exercise 3.md","fromNode":"fy24-remote/Bootcamp Notes.md","fromSide":"bottom","toNode":"fy24-remote/C#/Exercise 3.md","toSide":"top"},
+		{"id":"fy24-remote/C#/Exercise 3.md-fy24-remote/Bootcamp Notes.md","fromNode":"fy24-remote/C#/Exercise 3.md","fromSide":"top","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"bottom"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/C#/Exercise 4.md","fromNode":"fy24-remote/Bootcamp Notes.md","fromSide":"bottom","toNode":"fy24-remote/C#/Exercise 4.md","toSide":"top"},
+		{"id":"fy24-remote/C#/Exercise 4.md-fy24-remote/Bootcamp Notes.md","fromNode":"fy24-remote/C#/Exercise 4.md","fromSide":"top","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"bottom"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/Exercise 5.md","fromNode":"fy24-remote/Bootcamp Notes.md","fromSide":"bottom","toNode":"fy24-remote/Exercise 5.md","toSide":"top"},
+		{"id":"fy24-remote/Exercise 5.md-fy24-remote/Bootcamp Notes.md","fromNode":"fy24-remote/Exercise 5.md","fromSide":"top","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"bottom"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/Web Dev/JQuery.md","fromNode":"fy24-remote/Bootcamp Notes.md","fromSide":"bottom","toNode":"fy24-remote/Web Dev/JQuery.md","toSide":"top"},
+		{"id":"fy24-remote/Web Dev/JQuery.md-fy24-remote/Bootcamp Notes.md","fromNode":"fy24-remote/Web Dev/JQuery.md","fromSide":"top","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"bottom"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/ATAS SQL/MySQL Day Three.md","fromNode":"fy24-remote/ATAS SQL/MySQL Day Three.md","fromSide":"bottom","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"top"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/C#/CSharp Trapezoid.md","fromNode":"fy24-remote/C#/CSharp Trapezoid.md","fromSide":"bottom","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"left"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/Web Dev/ASP .NET MVC.md","fromNode":"fy24-remote/Web Dev/ASP .NET MVC.md","fromSide":"right","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"left"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/Web Dev/Exercise 11.md","fromNode":"fy24-remote/Web Dev/Exercise 11.md","fromSide":"right","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"left"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/Web Dev/Final Project.md","fromNode":"fy24-remote/Web Dev/Final Project.md","fromSide":"top","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"left"},
+		{"id":"fy24-remote/Bootcamp Notes.md-fy24-remote/Web Dev/Live Regex Search.md","fromNode":"fy24-remote/Web Dev/Live Regex Search.md","fromSide":"top","toNode":"fy24-remote/Bootcamp Notes.md","toSide":"bottom"}
+	],
+	"metadata":{}
 }
